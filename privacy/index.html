@@ -213,7 +213,7 @@
   <h1>Privacy Notice</h1>
 
   <div class="meta">
-    <p><strong>Version:</strong> 2026-05-23-c</p>
+    <p><strong>Version:</strong> 2026-05-23-d</p>
     <p><strong>Effective from:</strong> 23 May 2026</p>
   </div>
 
@@ -238,17 +238,19 @@
 
   <h3>From PTs (Tenant app users)</h3>
   <ul>
-    <li><strong>Account data:</strong> name, email address, password (stored as a salted hash by Supabase), business name.</li>
+    <li><strong>Account data:</strong> name, email address, password (stored as a salted hash by Supabase), business name and brand details (logo, colour).</li>
     <li><strong>Authentication data:</strong> login timestamps, IP address, browser and device information.</li>
-    <li><strong>Content you create:</strong> exercise libraries, workout templates, session plans, notes you make about your clients, body weight records you enter, and any other data you record in the app.</li>
+    <li><strong>Content you create:</strong> exercise libraries, workout templates, session plans, set-by-set logs you record during sessions, planning and session notes.</li>
+    <li><strong>Data you enter about your clients:</strong> client name, contact details, date of birth, sex, body weight, training history, injury notes against specific body areas, training goals, and any other notes you record. See section 4 for the controller/processor split that applies to this data.</li>
     <li><strong>Consent records:</strong> timestamp, policy version, IP address, and user agent at the moment you accept or decline our terms.</li>
   </ul>
 
   <h3>From clients (Client app users)</h3>
   <ul>
-    <li><strong>Account data:</strong> name, email address, password (stored as a salted hash).</li>
+    <li><strong>Account data:</strong> name, email address, password (stored as a salted hash by Supabase).</li>
+    <li><strong>Profile data:</strong> date of birth (used for age-based leaderboard grouping and to confirm you are 16 or over), sex (used for like-for-like leaderboard comparison), training goals you record.</li>
     <li><strong>Authentication data:</strong> login timestamps, IP address, browser and device information.</li>
-    <li><strong>Training data:</strong> sets, reps, weights, body weight, recovery notes, leaderboard display name (if opted in).</li>
+    <li><strong>Training data:</strong> exercises you log, sets, reps, weights you lift, time-under-tension where applicable, session dates and timings, body weight (recorded in kg or stones and pounds), injury notes you log against specific body areas, recovery and wellbeing entries (where the feature is enabled), leaderboard display name (if you opt in).</li>
     <li><strong>Consent records:</strong> timestamp, policy version, IP address, and user agent at the moment you accept or decline our terms.</li>
   </ul>
 
@@ -257,7 +259,7 @@
     <li><strong>Technical data:</strong> error logs, page load timestamps, anonymised usage statistics.</li>
   </ul>
 
-  <p>We do not collect special category data (such as health diagnoses, sexual orientation, ethnicity, or religious beliefs). The training data we hold is for fitness logging purposes; it is not medical data and we do not treat it as such. You should not enter clinical health information into the platform.</p>
+  <p>The personal data listed above is used for fitness logging and training purposes. We do not ask for, and you should not enter, special category data under UK GDPR Article 9 (such as health diagnoses, clinical records, sexual orientation, ethnicity, or religious beliefs). Body weight, training metrics, and injury notes captured in the platform are fitness data, not medical data, and we do not treat them as such. Injury notes in particular should describe how the injury affects training (for example, "tweaked lower back, avoid heavy hinge work for two weeks"), not clinical diagnoses or treatment plans.</p>
 
   <h2>4. Controller / processor relationship for client data</h2>
   <p>The relationship between 141kg, the PT, and the client requires explanation.</p>
