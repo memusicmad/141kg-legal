@@ -81,9 +81,9 @@
   .docs {
     display: grid;
     gap: 16px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     .docs { grid-template-columns: 1fr; }
   }
   .docs a.card {
@@ -159,13 +159,19 @@
     <a class="card" href="/terms/">
       <p class="kicker">Document 01</p>
       <p class="title">Terms of Service</p>
-      <p class="desc">The contract between you and 141kg.com when you use the platform.</p>
+      <p class="desc">The contract between you and 141kg when you use the platform.</p>
       <span class="arrow">Read →</span>
     </a>
     <a class="card" href="/privacy/">
       <p class="kicker">Document 02</p>
       <p class="title">Privacy Notice</p>
       <p class="desc">What we collect, why, how long we keep it, and your rights under UK GDPR.</p>
+      <span class="arrow">Read →</span>
+    </a>
+    <a class="card" href="/dpa/">
+      <p class="kicker">Document 03</p>
+      <p class="title">Data Processing Agreement</p>
+      <p class="desc">For PTs: how 141kg handles client data on your behalf as a UK GDPR processor.</p>
       <span class="arrow">Read →</span>
     </a>
   </div>
