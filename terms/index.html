@@ -1,290 +1,255 @@
-<!doctype html>
-<html lang="en-GB">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Terms of Service · 141kg</title>
 <meta name="description" content="The terms on which 141kg.com makes its software platform available to you.">
 <meta name="robots" content="index,follow">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<title>Terms of Service · 141kg</title>
 <style>
   :root {
-    --bg: #fafaf7;
-    --surface: #ffffff;
-    --ink: #15171a;
-    --ink-soft: #44474d;
-    --ink-faint: #6b6f76;
-    --rule: #e6e4dc;
-    --accent: #b91c1c;
-    --max: 720px;
+    --bg: #ffffff;
+    --text: #111827;
+    --text-muted: #4b5563;
+    --text-faint: #6b7280;
+    --link: #1f2937;
+    --link-hover: #000000;
+    --border: #e5e7eb;
+    --border-strong: #d1d5db;
+    --code-bg: #f3f4f6;
+    --accent: #111827;
   }
   * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
+  html, body { margin: 0; padding: 0; }
   body {
-    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
     background: var(--bg);
-    color: var(--ink);
-    font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
-    font-size: 18px;
-    line-height: 1.65;
-    font-feature-settings: 'kern', 'liga', 'onum';
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
   }
   header.site {
-    border-bottom: 1px solid var(--rule);
-    background: var(--surface);
-  }
-  header.site .inner {
-    max-width: var(--max);
-    margin: 0 auto;
+    border-bottom: 1px solid var(--border);
     padding: 18px 24px;
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 24px;
-  }
-  header.site .brand {
-    font-family: 'Inter', system-ui, sans-serif;
-    font-weight: 700;
-    font-size: 17px;
-    letter-spacing: 0.02em;
-    color: var(--ink);
-    text-decoration: none;
-  }
-  header.site .brand span { color: var(--accent); }
-  header.site nav a {
-    font-family: 'Inter', system-ui, sans-serif;
-    font-size: 13px;
-    color: var(--ink-soft);
-    text-decoration: none;
-    margin-left: 18px;
-  }
-  header.site nav a:hover { color: var(--accent); }
-  main {
-    max-width: var(--max);
-    margin: 0 auto;
-    padding: 56px 24px 96px;
-  }
-  .eyebrow {
-    font-family: 'Inter', system-ui, sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin: 0 0 12px;
-  }
-  h1 {
-    font-family: 'Fraunces', Georgia, serif;
-    font-weight: 500;
-    font-size: clamp(34px, 5vw, 46px);
-    line-height: 1.1;
-    letter-spacing: -0.01em;
-    margin: 0 0 24px;
-  }
-  .meta {
-    font-family: 'Inter', system-ui, sans-serif;
-    font-size: 14px;
-    color: var(--ink-faint);
-    padding-bottom: 28px;
-    border-bottom: 1px solid var(--rule);
-    margin-bottom: 36px;
-  }
-  .meta p { margin: 4px 0; }
-  .meta strong { color: var(--ink-soft); font-weight: 500; }
-  h2 {
-    font-family: 'Inter', system-ui, sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.3;
-    margin: 48px 0 16px;
-    color: var(--ink);
-  }
-  h3 {
-    font-family: 'Inter', system-ui, sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin: 28px 0 10px;
-    color: var(--ink-soft);
-  }
-  p { margin: 0 0 16px; }
-  ul, ol { margin: 0 0 16px; padding-left: 22px; }
-  li { margin-bottom: 6px; }
-  a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
-  a:hover { text-decoration: none; }
-  blockquote.notice {
-    margin: 0 0 36px;
-    padding: 18px 22px;
-    background: #fff7ed;
-    border-left: 3px solid #c2410c;
-    font-family: 'Inter', system-ui, sans-serif;
-    font-size: 14px;
-    line-height: 1.55;
-    color: #7c2d12;
-    border-radius: 0 4px 4px 0;
-  }
-  blockquote.notice strong { color: #7c2d12; }
-  hr {
-    border: 0;
-    border-top: 1px solid var(--rule);
-    margin: 36px 0;
-  }
-  footer.site {
-    border-top: 1px solid var(--rule);
-    background: var(--surface);
-    margin-top: 80px;
-  }
-  footer.site .inner {
-    max-width: var(--max);
-    margin: 0 auto;
-    padding: 24px;
-    display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 12px;
-    font-family: 'Inter', system-ui, sans-serif;
-    font-size: 13px;
-    color: var(--ink-faint);
   }
-  footer.site a { color: var(--ink-soft); text-decoration: none; }
-  footer.site a:hover { color: var(--accent); }
-  @media print {
-    header.site, footer.site { display: none; }
-    body { background: #fff; font-size: 11pt; }
-    main { padding: 0; max-width: none; }
-    a { color: var(--ink); text-decoration: none; }
+  header.site .brand {
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--text);
+    letter-spacing: -0.01em;
+  }
+  header.site nav { display: flex; gap: 18px; }
+  header.site nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  header.site nav a:hover { color: var(--link-hover); }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 36px 24px 64px;
+  }
+  .crumb {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-faint);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0 0 24px;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 22px;
+    margin: 40px 0 14px;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 {
+    font-size: 17px;
+    margin: 24px 0 10px;
+    font-weight: 700;
+  }
+  p { margin: 0 0 14px; color: var(--text); }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--link); text-decoration: underline; }
+  a:hover { color: var(--link-hover); }
+  strong { font-weight: 700; }
+  .meta {
+    background: var(--code-bg);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 0 0 28px;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .meta p { margin: 0; }
+  .meta strong { color: var(--text); }
+  footer.site {
+    border-top: 1px solid var(--border);
+    padding: 24px;
+    text-align: center;
+    color: var(--text-faint);
+    font-size: 13px;
+  }
+  footer.site a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: 600;
+  }
+  footer.site a:hover { color: var(--link-hover); }
+  @media (max-width: 600px) {
+    h1 { font-size: 28px; }
+    h2 { font-size: 19px; }
+    header.site { padding: 14px 16px; }
+    main { padding: 24px 16px 48px; }
   }
 </style>
 </head>
 <body>
 
 <header class="site">
-  <div class="inner">
-    <a class="brand" href="/">141<span>kg</span></a>
-    <nav>
-      <a href="/terms/">Terms</a>
-      <a href="/privacy/">Privacy</a>
-      <a href="/dpa/">DPA</a>
-    </nav>
-  </div>
+  <a href="https://legal.141kg.com/" class="brand">141kg</a>
+  <nav>
+    <a href="https://legal.141kg.com/terms/">Terms</a>
+    <a href="https://legal.141kg.com/privacy/">Privacy</a>
+    <a href="https://legal.141kg.com/dpa/">DPA</a>
+  </nav>
 </header>
 
 <main>
-  <p class="eyebrow">Legal</p>
-  <h1>Terms of Service</h1>
 
-  <div class="meta">
-    <p><strong>Version:</strong> 2026-05-23-d</p>
-    <p><strong>Effective from:</strong> 23 May 2026</p>
-  </div>
+<div class="crumb">Legal</div>
 
-  <h2>1. About these terms</h2>
-  <p>These are the terms on which 141kg.com makes its software platform available to you. They form a contract between you and us. By ticking the acceptance box in the app, you confirm you have read these terms and agree to be bound by them.</p>
-  <p><strong>Us:</strong> 141kg Ltd, a company registered in England and Wales under company number [COMPANY NUMBER], with registered office at Gables House, 62 Kenilworth Road, Leamington Spa, CV32 6JX. We trade as 141kg. You can contact us at <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</p>
-  <p><strong>You:</strong> the person who creates an account on the 141kg platform. If you are a personal trainer using the Tenant app, "you" means you in your business capacity. If you are a client of a personal trainer using the Client app, "you" means you in your personal capacity.</p>
+<h1>Terms of Service</h1>
 
-  <h2>2. The platform</h2>
-  <p>The 141kg platform is software for personal trainers (PTs) to plan and record training sessions, and for their clients to view and log their own training. It comprises three applications:</p>
-  <ul>
-    <li>The <strong>Tenant app</strong>, used by PTs to manage their clients, build exercise libraries and session templates, log sets and reps during sessions, record body weight and injury notes, and review client progress.</li>
-    <li>The <strong>Client app</strong>, used by clients to view their assigned training, log their own sets and reps, see their progress over time, opt in to a leaderboard, and (where enabled) record recovery and wellbeing data.</li>
-    <li>The <strong>Landlord app</strong>, used by us to administer the platform.</li>
-  </ul>
-  <p>We make the Tenant app and Client app available to you under these terms. You access them over the public internet using a modern web browser. We may add, change, or remove features from time to time. Where a change materially reduces functionality you rely on, we will give reasonable notice.</p>
+<div class="meta">
+  <p><strong>Version:</strong> 2026-05-25-a</p>
+  <p><strong>Effective from:</strong> 25 May 2026</p>
+</div>
 
-  <h2>3. Accounts</h2>
-  <p>To use the platform you need an account. PT accounts are created by you directly. Client accounts are created by your PT when they invite you. You are responsible for keeping your login credentials secure and for any activity carried out under your account. PT accounts can enable multi-factor authentication (MFA) from the app settings; we strongly recommend doing so.</p>
-  <p>You must be at least 18 years old to create a PT account. Clients must be at least 16 years old to use the Client app, and we recommend parental supervision for clients under 18.</p>
-  <p>You must give us accurate information when creating your account and keep it up to date. We may suspend or close accounts where the information is materially inaccurate, where the account has been used in breach of these terms, or where we are required to do so by law.</p>
+<h2>1. About these terms</h2>
+<p>These are the terms on which 141kg.com makes its software platform available to you. They form a contract between you and us. By ticking the acceptance box in the app, you confirm you have read these terms and agree to be bound by them.</p>
+<p><strong>Us:</strong> 141kg Ltd, a company registered in England and Wales under company number [COMPANY NUMBER], with registered office at Gables House, 62 Kenilworth Road, Leamington Spa, CV32 6JX. We trade as 141kg. You can contact us at <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</p>
+<p><strong>You:</strong> the person who creates an account on the 141kg platform. If you are a personal trainer using the Tenant app, "you" means you in your business capacity. If you are a client of a personal trainer using the Client app, "you" means you in your personal capacity.</p>
 
-  <h2>4. What you can and cannot do with the platform</h2>
-  <p>You can:</p>
-  <ul>
-    <li>Use the platform for its intended purpose: planning, recording, and reviewing training data.</li>
-    <li>Invite clients to the Client app if you are a PT.</li>
-    <li>Export your own data. PTs can export client data directly from the Tenant app. Clients can request an export of their data by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</li>
-  </ul>
-  <p>You cannot:</p>
-  <ul>
-    <li>Use the platform to process data about anyone other than yourself or, if you are a PT, your clients with their knowledge.</li>
-    <li>Scrape, copy, reverse-engineer, or attempt to extract our source code.</li>
-    <li>Use the platform to send spam, conduct unlawful activity, or harass anyone.</li>
-    <li>Resell access to the platform without our written agreement.</li>
-    <li>Use automated tools to log in or interact with the platform other than via the provided apps.</li>
-  </ul>
+<h2>2. The platform</h2>
+<p>The 141kg platform is software for personal trainers (PTs) to plan and record training sessions, and for their clients to view and log their own training. It comprises three applications:</p>
+<ul>
+  <li>The <strong>Tenant app</strong>, used by PTs to manage their clients, build exercise libraries and session templates, log sets and reps during sessions, record body weight and injury notes, and review client progress.</li>
+  <li>The <strong>Client app</strong>, used by clients to view their assigned training, log their own sets and reps, see their progress over time, opt in to a leaderboard, record session metrics (heart rate, calories, RPE), and (where enabled) record recovery and wellbeing data.</li>
+  <li>The <strong>Landlord app</strong>, used by us to administer the platform.</li>
+</ul>
+<p>We make the Tenant app and Client app available to you under these terms. You access them over the public internet using a modern web browser. We may add, change, or remove features from time to time. Where a change materially reduces functionality you rely on, we will give reasonable notice.</p>
 
-  <h2>5. PT obligations regarding clients</h2>
-  <p>If you are a PT, you are responsible for the relationship between you and your clients. The platform is a tool you use to provide your services; it does not replace your own contract with your clients.</p>
-  <p>Before adding a client to the platform, you must:</p>
-  <ul>
-    <li>Tell the client that 141kg.com is the software provider and that their data will be stored on the 141kg platform.</li>
-    <li>Make our Privacy Notice available to the client (the URL is <a href="https://legal.141kg.com/privacy/">https://legal.141kg.com/privacy/</a>).</li>
-    <li>Have a lawful basis under UK GDPR for processing their personal data (usually your contract with them).</li>
-  </ul>
-  <p>You acknowledge that for the personal data you enter about your clients, you are the data controller and we are your data processor. The terms on which we process that data for you are set out in our Data Processing Agreement, which forms part of these terms by reference and is available at <a href="https://legal.141kg.com/dpa/">https://legal.141kg.com/dpa/</a>.</p>
+<h2>3. Accounts</h2>
+<p>To use the platform you need an account. PT accounts are created by you directly. Client accounts are created by your PT when they invite you. You are responsible for keeping your login credentials secure and for any activity carried out under your account. PT accounts can enable multi-factor authentication (MFA) from the app settings; we strongly recommend doing so.</p>
+<p>You must be at least 18 years old to create a PT account. Clients must be at least 16 years old to use the Client app, and we recommend parental supervision for clients under 18.</p>
+<p>You must give us accurate information when creating your account and keep it up to date. We may suspend or close accounts where the information is materially inaccurate, where the account has been used in breach of these terms, or where we are required to do so by law.</p>
 
-  <h2>6. Pricing and tiers</h2>
-  <p>The platform offers three tiers: <strong>Essential</strong>, <strong>Pro</strong>, and <strong>Elite</strong>. At present all features available on the Essential tier are free to use. Pro and Elite unlock additional features (for example, advanced analysis, recovery tracking, and dual client logging) and will become paid tiers when we activate billing for them.</p>
-  <p>When we activate paid tiers, we will tell you in advance and you can choose whether to upgrade. Continued use of the Essential tier on a free basis will remain available unless we publish a separate notice changing that.</p>
-  <p>If you sign up for a paid tier, the price, billing cycle, and what is included will be set out at the point of purchase. Payment terms for paid tiers will be added to these terms at that time.</p>
+<h2>4. What you can and cannot do with the platform</h2>
+<p>You can:</p>
+<ul>
+  <li>Use the platform for its intended purpose: planning, recording, and reviewing training data.</li>
+  <li>Invite clients to the Client app if you are a PT.</li>
+  <li>Export your own data. PTs can export client data directly from the Tenant app. Clients can request an export of their data by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</li>
+</ul>
+<p>You cannot:</p>
+<ul>
+  <li>Use the platform to process data about anyone other than yourself or, if you are a PT, your clients with their knowledge.</li>
+  <li>Scrape, copy, reverse-engineer, or attempt to extract our source code.</li>
+  <li>Use the platform to send spam, conduct unlawful activity, or harass anyone.</li>
+  <li>Resell access to the platform without our written agreement.</li>
+  <li>Use automated tools to log in or interact with the platform other than via the provided apps.</li>
+</ul>
 
-  <h2>7. Availability</h2>
-  <p>We aim to keep the platform available at all times but we do not guarantee uninterrupted service. We may need to take the platform offline for maintenance, security, or technical reasons. We will give reasonable notice where we can.</p>
-  <p>The platform depends on third-party services including our hosting provider (Vercel) and our database provider (Supabase). If those services fail, our platform may be affected.</p>
+<h2>5. PT obligations regarding clients</h2>
+<p>If you are a PT, you are responsible for the relationship between you and your clients. The platform is a tool you use to provide your services; it does not replace your own contract with your clients.</p>
+<p>Before adding a client to the platform, you must:</p>
+<ul>
+  <li>Tell the client that 141kg.com is the software provider and that their data will be stored on the 141kg platform.</li>
+  <li>Make our Privacy Notice available to the client (the URL is <a href="https://legal.141kg.com/privacy/">https://legal.141kg.com/privacy/</a>).</li>
+  <li>Have a lawful basis under UK GDPR for processing their personal data (usually your contract with them).</li>
+</ul>
+<p>You acknowledge that for the personal data you enter about your clients, you are the data controller and we are your data processor. The terms on which we process that data for you are set out in our Data Processing Agreement, which forms part of these terms by reference and is available at <a href="https://legal.141kg.com/dpa/">https://legal.141kg.com/dpa/</a>.</p>
 
-  <h2>8. Your content and data</h2>
-  <p>You retain ownership of the data you put into the platform (your account details, your clients' details, workout data, body weight records, notes). You grant us a licence to host, process, transmit, display, and back up that data to the extent necessary to provide the platform to you.</p>
-  <p>We process personal data in accordance with our Privacy Notice at <a href="https://legal.141kg.com/privacy/">https://legal.141kg.com/privacy/</a>. If you are a PT, the processing of your clients' personal data is also governed by our Data Processing Agreement at <a href="https://legal.141kg.com/dpa/">https://legal.141kg.com/dpa/</a>.</p>
-  <p>PTs can export their own and their clients' data from inside the Tenant app. Clients can request an export of their own data by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>. We will provide it in a machine-readable format within 30 days.</p>
+<h2>6. Pricing and tiers</h2>
+<p>The platform offers three tiers: <strong>Essential</strong>, <strong>Pro</strong>, and <strong>Elite</strong>. At present all features available on the Essential tier are free to use. Pro and Elite unlock additional features (for example, advanced analysis, recovery tracking, and dual client logging) and will become paid tiers when we activate billing for them.</p>
+<p>When we activate paid tiers, we will tell you in advance and you can choose whether to upgrade. Continued use of the Essential tier on a free basis will remain available unless we publish a separate notice changing that.</p>
+<p>If you sign up for a paid tier, the price, billing cycle, and what is included will be set out at the point of purchase. Payment terms for paid tiers will be added to these terms at that time.</p>
 
-  <h2>9. Closing your account</h2>
-  <p>You can close your account at any time by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>. We will delete your account and associated data within 30 days of closure, except where we are required to retain certain information for legal, accounting, or regulatory reasons.</p>
-  <p>If you are a PT and you close your account, your clients' data on the platform will be deleted at the same time unless you instruct us otherwise. You are responsible for telling your clients that their access to the Client app will end.</p>
-  <p>We may close your account if you breach these terms, if your account is inactive for more than 24 months, or if we cease operating the platform. We will give you reasonable notice and a chance to export your data.</p>
+<h2>7. Availability</h2>
+<p>We aim to keep the platform available at all times but we do not guarantee uninterrupted service. We may need to take the platform offline for maintenance, security, or technical reasons. We will give reasonable notice where we can.</p>
+<p>The platform depends on third-party services including our hosting provider (Vercel) and our database provider (Supabase). If those services fail, our platform may be affected.</p>
 
-  <h2>10. Our liability</h2>
-  <p>Nothing in these terms limits or excludes our liability for:</p>
-  <ul>
-    <li>Death or personal injury caused by our negligence.</li>
-    <li>Fraud or fraudulent misrepresentation.</li>
-    <li>Anything else that cannot be limited or excluded under UK law.</li>
-  </ul>
-  <p>Subject to that:</p>
-  <ul>
-    <li>We provide the platform "as is" and do not warrant that it will be free from errors or interruptions, or that it will meet your specific requirements.</li>
-    <li>We are not liable for any loss of profits, loss of business, loss of revenue, loss of anticipated savings, loss of data (except where caused by our breach), or any indirect or consequential loss.</li>
-    <li>Our total liability to you in any 12-month period is limited to the greater of (a) £100 or (b) the total amount you have paid us for the platform in that 12-month period.</li>
-  </ul>
-  <p>The platform is a record-keeping tool, not a medical, fitness, or coaching service. We do not provide training advice. Decisions about exercise, weight, nutrition, or recovery are between you and your PT (or your own judgement). We are not responsible for the consequences of those decisions.</p>
+<h2>8. Your content and data</h2>
+<p>You retain ownership of the data you put into the platform (your account details, your clients' details, workout data, body weight records, session metrics, notes). You grant us a licence to host, process, transmit, display, and back up that data to the extent necessary to provide the platform to you.</p>
+<p>We process personal data in accordance with our Privacy Notice at <a href="https://legal.141kg.com/privacy/">https://legal.141kg.com/privacy/</a>. If you are a PT, the processing of your clients' personal data is also governed by our Data Processing Agreement at <a href="https://legal.141kg.com/dpa/">https://legal.141kg.com/dpa/</a>.</p>
+<p>PTs can export their own and their clients' data from inside the Tenant app. Clients can request an export of their own data by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>. We will provide it in a machine-readable format within 30 days.</p>
 
-  <h2>11. Indemnity</h2>
-  <p>If you are a PT, you agree to indemnify us against any claim brought by your clients or any third party arising from your use of the platform, including any breach by you of these terms or of UK GDPR. This does not apply to claims caused by our own breach of these terms.</p>
+<h2>9. Closing your account</h2>
+<p>You can close your account at any time by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>. We will delete your account and associated data in line with the retention rules in our Privacy Notice, except where we are required to retain certain information for legal, accounting, or regulatory reasons.</p>
+<p>If you are a PT and you close your account, you have 30 days from closure to export your client data using the tools available in the Tenant app or by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>. After 30 days, your client data will be deleted from active systems within a further 30 days, in line with the Data Processing Agreement at <a href="https://legal.141kg.com/dpa/">https://legal.141kg.com/dpa/</a>. You are responsible for telling your clients that their access to the Client app will end.</p>
+<p>We may close your account if you breach these terms, if your account is inactive for more than 24 months, or if we cease operating the platform. We will give you reasonable notice and a chance to export your data.</p>
 
-  <h2>12. Changes to these terms</h2>
-  <p>We may update these terms from time to time. When we do, we will:</p>
-  <ul>
-    <li>Bump the version number at the top of this document.</li>
-    <li>Show you the updated terms in the app, with a tick-box, the next time you log in.</li>
-    <li>Record your acceptance of the new version with a timestamp, the version number, your IP address, and your device.</li>
-  </ul>
-  <p>If you do not accept the updated terms, you will not be able to continue using the platform. You can close your account and request your data at that point.</p>
+<h2>10. Our liability</h2>
+<p>Nothing in these terms limits or excludes our liability for:</p>
+<ul>
+  <li>Death or personal injury caused by our negligence.</li>
+  <li>Fraud or fraudulent misrepresentation.</li>
+  <li>Anything else that cannot be limited or excluded under UK law.</li>
+</ul>
+<p>Subject to that:</p>
+<ul>
+  <li>We provide the platform "as is" and do not warrant that it will be free from errors or interruptions, or that it will meet your specific requirements.</li>
+  <li>We are not liable for any loss of profits, loss of business, loss of revenue, loss of anticipated savings, loss of data (except where caused by our breach), or any indirect or consequential loss.</li>
+  <li>Our total liability to you in any 12-month period is limited to the greater of (a) &pound;100 or (b) the total amount you have paid us for the platform in that 12-month period.</li>
+</ul>
+<p>The platform is a record-keeping tool, not a medical, fitness, or coaching service. We do not provide training advice. Decisions about exercise, weight, nutrition, or recovery are between you and your PT (or your own judgement). We are not responsible for the consequences of those decisions.</p>
 
-  <h2>13. Governing law and jurisdiction</h2>
-  <p>These terms are governed by the laws of England and Wales. Any dispute will be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+<h2>11. Indemnity</h2>
+<p>If you are a PT, you agree to indemnify us against any claim brought by your clients or any third party arising from your use of the platform, including any breach by you of these terms or of UK GDPR. This does not apply to claims caused by our own breach of these terms.</p>
 
-  <h2>14. Contact</h2>
-  <p>For questions about these terms, contact us at <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</p>
+<h2>12. Changes to these terms</h2>
+<p>We may update these terms from time to time. When we do, we will:</p>
+<ul>
+  <li>Bump the version number at the top of this document.</li>
+  <li>Show you the updated terms in the app, with a tick-box, the next time you log in.</li>
+  <li>Record your acceptance of the new version with a timestamp, the version number, your IP address, and your device.</li>
+</ul>
+<p>If you do not accept the updated terms, you will not be able to continue using the platform. You can close your account and request your data at that point.</p>
+
+<h2>13. Governing law and jurisdiction</h2>
+<p>These terms are governed by the laws of England and Wales. Any dispute will be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+
+<h2>14. Contact</h2>
+<p>For questions about these terms, contact us at <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</p>
 
 </main>
 
 <footer class="site">
-  <div class="inner">
-    <span>© 141kg.com</span>
-    <span><a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="/dpa/">DPA</a></span>
-  </div>
+  &copy; 141kg.com
+  <a href="https://legal.141kg.com/terms/">Terms</a>·
+  <a href="https://legal.141kg.com/privacy/">Privacy</a>·
+  <a href="https://legal.141kg.com/dpa/">DPA</a>
 </footer>
 
 </body>
