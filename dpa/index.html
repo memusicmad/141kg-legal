@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="The terms on which 141kg processes client personal data on behalf of personal trainers using the platform.">
+<meta name="description" content="How 141kg handles client data on behalf of personal trainers as a UK GDPR processor.">
 <meta name="robots" content="index,follow">
 <title>Data Processing Agreement · 141kg</title>
 <style>
@@ -102,26 +102,29 @@
   }
   .meta p { margin: 0; }
   .meta strong { color: var(--text); }
-  table {
+  table.sub {
     width: 100%;
     border-collapse: collapse;
     margin: 0 0 20px;
     font-size: 14px;
   }
-  th, td {
-    border: 1px solid var(--border);
-    padding: 10px 12px;
+  table.sub th, table.sub td {
     text-align: left;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
     vertical-align: top;
   }
-  th {
+  table.sub th {
     background: var(--code-bg);
     font-weight: 700;
+    font-size: 13px;
   }
-  hr {
-    border: none;
-    border-top: 1px solid var(--border);
-    margin: 40px 0;
+  table.sub td {
+    color: var(--text-muted);
+  }
+  table.sub td:first-child {
+    color: var(--text);
+    font-weight: 600;
   }
   footer.site {
     border-top: 1px solid var(--border);
@@ -142,6 +145,8 @@
     h2 { font-size: 19px; }
     header.site { padding: 14px 16px; }
     main { padding: 24px 16px 48px; }
+    table.sub { font-size: 13px; }
+    table.sub th, table.sub td { padding: 8px 10px; }
   }
 </style>
 </head>
@@ -163,144 +168,191 @@
 <h1>Data Processing Agreement</h1>
 
 <div class="meta">
-  <p><strong>Version:</strong> 2026-05-25-a</p>
-  <p><strong>Effective from:</strong> 25 May 2026</p>
+  <p><strong>Version:</strong> 2026-05-26-b</p>
+  <p><strong>Effective from:</strong> 26 May 2026</p>
 </div>
 
 <h2>1. About this agreement</h2>
-<p>This Data Processing Agreement (the "DPA") forms part of the <a href="https://legal.141kg.com/terms/">141kg Terms of Service</a> and governs how 141kg processes personal data about your clients on your behalf when you use the platform as a personal trainer (PT).</p>
-<p>It is required by Article 28 of the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.</p>
+<p>This Data Processing Agreement (DPA) governs the processing of personal data carried out by 141kg Ltd as a processor on behalf of personal trainers (PTs) who use the Tenant app. It forms part of our Terms of Service and applies whenever a PT enters or stores personal data about their clients on the 141kg platform.</p>
+<p>This DPA does not apply to processing where 141kg Ltd is itself the controller (for example, the PT's own account data, login activity, and the technical operation of the platform). That processing is governed by our <a href="https://legal.141kg.com/privacy/">Privacy Notice</a>.</p>
+<p>By using the Tenant app to record data about your clients, you accept this DPA. You do not need to sign a separate document. If you require a counter-signed copy for your records, email us at <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</p>
 
-<h2>2. The parties</h2>
-<p><strong>Controller:</strong> you, the PT, in your capacity as the user of the Tenant app and the person responsible for the relationship with your clients.</p>
-<p><strong>Processor:</strong> 141kg Ltd, a company registered in England and Wales under company number [COMPANY NUMBER], with registered office at Gables House, 62 Kenilworth Road, Leamington Spa, CV32 6JX. Email: <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</p>
-<p>By creating a PT account and accepting the Terms of Service, you accept this DPA and authorise 141kg to process your clients' personal data on the terms set out here.</p>
+<h2>2. Definitions</h2>
+<p>The terms <strong>controller</strong>, <strong>processor</strong>, <strong>sub-processor</strong>, <strong>personal data</strong>, <strong>special category data</strong>, <strong>data subject</strong>, and <strong>personal data breach</strong> have the meanings given to them in UK GDPR.</p>
+<p><strong>Us / we / 141kg:</strong> 141kg Ltd, a company registered in England and Wales under company number [COMPANY NUMBER], registered office Gables House, 62 Kenilworth Road, Leamington Spa, CV32 6JX.</p>
+<p><strong>You / the PT:</strong> the personal trainer who has created a Tenant app account and uses the platform to record data about their clients.</p>
+<p><strong>Client data:</strong> the personal data about the PT's clients that is processed by 141kg on the PT's behalf through the Tenant app and the Client app.</p>
 
-<h2>3. Scope of this agreement</h2>
-<p>This DPA applies only to personal data you enter into the Tenant app about your clients (for example: client names and contact details you record, training programmes you assign, body weight records you enter, notes you make about a client's progress or injuries).</p>
-<p>It does not apply to:</p>
+<h2>3. Roles</h2>
+<p>For client data:</p>
 <ul>
-  <li>Your own PT account data. 141kg is the controller of that data and processes it under the <a href="https://legal.141kg.com/privacy/">Privacy Notice</a>.</li>
-  <li>Personal data your clients enter into the Client app themselves, including session metrics (heart rate, calories, RPE) the client records against their own sessions or against sessions you logged for them. 141kg is the controller of that data under its direct contract with the client, and processes it under the Privacy Notice.</li>
+  <li>The <strong>PT is the controller</strong>. The PT decides what data to collect about clients, why, and on what lawful basis.</li>
+  <li><strong>141kg is the processor</strong>. We process client data only on the PT's documented instructions, which are set out in this DPA and in the way the Tenant app and Client app operate.</li>
+</ul>
+<p>This is a controller-to-processor relationship as defined in UK GDPR Article 28. We do not determine the purposes and means of processing client data, except to the extent necessary to provide the platform.</p>
+
+<h2>4. Subject matter, duration, nature and purpose of processing</h2>
+<p><strong>Subject matter:</strong> processing of personal data about the PT's clients for the purpose of training planning, recording, and analysis.</p>
+<p><strong>Duration:</strong> for the life of the PT's account, plus the 30-day transition period after closure, plus any further period required by the retention schedule in our Privacy Notice.</p>
+<p><strong>Nature of processing:</strong> collection, storage, structuring, retrieval, use, transmission, restriction, deletion, and backup. Processing is automated, carried out using the Tenant app and the Client app, and our supporting infrastructure.</p>
+<p><strong>Purpose of processing:</strong> to provide the 141kg platform to the PT, enabling the PT to plan, record, and analyse the training of their clients, and to provide the clients with access to their own records.</p>
+
+<h2>5. Categories of data subjects and personal data</h2>
+<p><strong>Data subjects:</strong> the PT's clients, who are aged 16 or over.</p>
+<p><strong>Personal data:</strong></p>
+<ul>
+  <li>Identification and contact data: name, email address, date of birth.</li>
+  <li>Authentication data: password hash (held by Supabase), login activity.</li>
+  <li>Training data: workouts, exercises, sets, reps, weights, times, body areas, session dates and times, session notes, goals, leaderboard opt-in, training history.</li>
+  <li>Photos: profile photo, where uploaded by the client.</li>
+</ul>
+<p><strong>Special category data (UK GDPR Article 9):</strong></p>
+<ul>
+  <li>Body weight measurements.</li>
+  <li>Heart rate (per session, optional).</li>
+  <li>Rate of perceived exertion (RPE) on a 0 to 10 scale (per session, optional).</li>
+  <li>Session calories (per session, optional, user-entered estimate).</li>
+</ul>
+<p>If we identify any other category of personal data being processed through the platform that is not covered by the lists above, we will update this DPA and notify PTs in the app.</p>
+
+<h2>6. PT obligations (warranties)</h2>
+<p>As the controller of client data, you warrant to us that:</p>
+<ul>
+  <li>You have a lawful basis under UK GDPR Article 6 for processing each client's personal data (usually your contract with the client).</li>
+  <li>You will not invite or enter data about anyone under 16 years old. You will confirm a client's age before adding them to the platform.</li>
+  <li>Before entering any special category data about a client, you have obtained their <strong>explicit consent</strong> under UK GDPR Article 9(2)(a) using the consent capture screen provided in the Tenant app. The consent screen requires the client to tick two boxes: one confirming agreement to recording, and one acknowledging the data is treated as special category health data and that consent can be withdrawn at any time.</li>
+  <li>You will stop entering any category of special category data for any client who has not consented or who has withdrawn consent.</li>
+  <li>You have made our Privacy Notice available to each client.</li>
+  <li>You have your own privacy notice that tells your clients about your processing, including the categories of data, the lawful basis, your contact details, and the clients' rights.</li>
+  <li>You will respond to data subject rights requests from your clients in line with UK GDPR (see section 9 below). We will help with the technical side, but the legal response is yours.</li>
+  <li>You will tell us promptly if you become aware that a client has withdrawn consent, has asked for their data to be deleted, has died, or has made any other request that affects how we should be processing their data.</li>
 </ul>
 
-<h2>4. Subject matter, duration, nature and purpose</h2>
-<table>
-  <tbody>
-    <tr><th>Subject matter</th><td>Hosting and managing client records you create in the 141kg Tenant app.</td></tr>
-    <tr><th>Duration</th><td>For as long as you maintain an active PT account, plus the retention period set out in section 11.</td></tr>
-    <tr><th>Nature and purpose of processing</th><td>Storing, organising, retrieving, displaying, transmitting, and backing up client data to enable you to deliver personal training services through the platform.</td></tr>
-    <tr><th>Types of personal data</th><td>Client name, contact details, date of birth, sex, body weight, training programmes and history (sets, reps, weights, dates), training goals, injury notes against specific body areas, recovery and progress notes.</td></tr>
-    <tr><th>Categories of data subjects</th><td>Your clients (individuals who have engaged you as a personal trainer).</td></tr>
-    <tr><th>Special category data</th><td>None expected. You must not enter health diagnoses, clinical information, or other special category data into the platform unless you have an Article 9 lawful basis to process it.</td></tr>
-  </tbody>
-</table>
-
-<h2>5. Your obligations as controller</h2>
-<p>You confirm and warrant that:</p>
+<h2>7. Our obligations (as processor)</h2>
+<p>We will:</p>
 <ul>
-  <li>You have a lawful basis under UK GDPR Article 6 for processing each client's personal data (in most cases, your contract with them).</li>
-  <li>You have provided your clients with a privacy notice that meets the requirements of UK GDPR Article 13, including telling them that 141kg.com is the software provider hosting their data, and making the 141kg Privacy Notice available to them.</li>
-  <li>You will only enter personal data into the platform that you are entitled to process.</li>
-  <li>You will respond to your clients' data subject requests (access, correction, deletion, portability, objection) in accordance with UK GDPR.</li>
-  <li>You will keep your account credentials secure and notify 141kg promptly if you suspect they have been compromised.</li>
+  <li>Process client data only on your documented instructions, which are set out in this DPA and reflected in how the Tenant app and Client app operate. If we are required by UK or other law to process client data otherwise, we will tell you before doing so (unless the law prohibits us from telling you).</li>
+  <li>Ensure that the people we authorise to access client data are bound by confidentiality obligations.</li>
+  <li>Implement appropriate technical and organisational security measures (see section 8).</li>
+  <li>Only engage sub-processors in line with section 10.</li>
+  <li>Help you respond to data subject rights requests (see section 9).</li>
+  <li>Help you comply with your obligations under UK GDPR Articles 32 to 36 (security, breach notification, data protection impact assessments, prior consultation), taking into account the nature of the processing and the information available to us.</li>
+  <li>At your choice, delete or return all client data at the end of the processing relationship, except where UK or other law requires us to keep it. Our default is deletion in line with the retention schedule in our Privacy Notice.</li>
+  <li>Make available to you all information necessary to demonstrate compliance with this DPA, and allow for and contribute to audits as set out in section 12.</li>
 </ul>
 
-<h2>6. 141kg's obligations as processor</h2>
-<p>141kg agrees, in accordance with UK GDPR Article 28(3):</p>
-
-<h3>6.1 Documented instructions</h3>
-<p>To process client personal data only on your documented instructions, including with regard to transfers of personal data to a third country, unless required to do otherwise by UK or EU law. Your instructions are the actions you take through the Tenant app together with this DPA and the Terms of Service. If 141kg is required by law to process the data otherwise, we will inform you of that legal requirement before processing, unless the law prohibits us from doing so.</p>
-
-<h3>6.2 Confidentiality</h3>
-<p>To ensure that any person authorised to process client personal data (including 141kg staff, contractors, and sub-processors) is bound by a duty of confidentiality.</p>
-
-<h3>6.3 Security</h3>
-<p>To take appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including:</p>
+<h2>8. Security measures</h2>
+<p>We implement and maintain the following technical and organisational measures, in line with UK GDPR Article 32:</p>
 <ul>
-  <li>Encryption of data in transit (HTTPS) and at rest (database-level encryption).</li>
-  <li>Row-level security policies that restrict access to authorised users only.</li>
-  <li>Salted password hashing handled by Supabase Auth.</li>
-  <li>Optional multi-factor authentication available on PT accounts.</li>
-  <li>Regular monitoring of platform access and security events.</li>
+  <li><strong>Encryption in transit:</strong> all connections to the platform use HTTPS (TLS 1.2 or later).</li>
+  <li><strong>Encryption at rest:</strong> client data stored in our database is encrypted at rest by our database provider.</li>
+  <li><strong>Authentication:</strong> PT accounts are protected by mandatory multi-factor authentication using a TOTP authenticator app. Client accounts use password-only authentication.</li>
+  <li><strong>Access controls:</strong> database row-level security ensures that one PT's data is isolated from any other PT's data, and one client's data is isolated from any other client's data.</li>
+  <li><strong>Least privilege:</strong> our own access to client data is limited to what is necessary to operate the platform and respond to support requests.</li>
+  <li><strong>Audit logging:</strong> authentication events and key data changes are logged for security and accountability.</li>
+  <li><strong>Backups:</strong> client data is backed up regularly. Backup retention is set out in our Privacy Notice retention schedule.</li>
+  <li><strong>Incident response:</strong> we operate a process for identifying, investigating, and responding to suspected personal data breaches (see section 11).</li>
 </ul>
 
-<h3>6.4 Sub-processors</h3>
-<p>You authorise 141kg to engage the sub-processors listed in Schedule A. We will inform you of any intended changes to the sub-processor list by updating Schedule A on this page and bumping the version of this DPA. You have the right to object to the change. If we cannot accommodate your objection, you may terminate your account and we will delete the relevant data in accordance with section 11.</p>
-<p>141kg remains liable to you for the acts and omissions of its sub-processors.</p>
-
-<h3>6.5 Assisting with data subject rights</h3>
-<p>To assist you, taking into account the nature of the processing, by appropriate technical and organisational measures, in fulfilling your obligation to respond to requests from your clients exercising their rights under UK GDPR.</p>
-
-<h3>6.6 Assisting with security, breach notification, and impact assessments</h3>
-<p>To assist you in ensuring compliance with your obligations under Articles 32 to 36 of UK GDPR, taking into account the nature of the processing and the information available to 141kg. In particular, 141kg will:</p>
+<h2>9. Data subject rights</h2>
+<p>Your clients have the rights set out in UK GDPR Articles 15 to 22 (access, rectification, erasure, restriction, portability, objection, and not being subject to automated decision-making with legal or similarly significant effects).</p>
+<p>As the controller, you are responsible for responding to these requests. We will help you with the technical side:</p>
 <ul>
-  <li>Notify you without undue delay (and in any event within 72 hours) after becoming aware of a personal data breach affecting client data.</li>
-  <li>Provide you with the information you need to notify the ICO and (where required) the affected data subjects.</li>
-  <li>Provide reasonable assistance with any data protection impact assessment you carry out.</li>
+  <li><strong>Access and portability:</strong> the Tenant app provides export tools for client data in machine-readable format. If a client asks for an export and you cannot retrieve it through the app, we will provide it on request within 14 days.</li>
+  <li><strong>Rectification:</strong> most data can be corrected directly in the app.</li>
+  <li><strong>Erasure:</strong> you can delete a client and their data from the Tenant app. If the client has self-logged data in the Client app that you cannot reach, contact us and we will delete it within 14 days.</li>
+  <li><strong>Restriction:</strong> on request, we will mark a client's data as restricted and stop active processing.</li>
+  <li><strong>Withdrawal of consent for special category data:</strong> the client can withdraw consent in the Client app, or by emailing admin@141kg.com. When they do, we notify you in the Tenant app and you must stop entering that category of data.</li>
 </ul>
+<p>We do not respond to data subject rights requests from your clients directly, except where the client cannot reach you. In that case we will help the client and tell you about the request as soon as possible.</p>
 
-<h3>6.7 Return or deletion at end of services</h3>
-<p>At your choice, to delete or return all client personal data to you after the end of your use of the platform, and to delete existing copies unless UK or EU law requires storage of the personal data. See section 11 for the practical mechanism.</p>
+<h2>10. Sub-processors</h2>
+<p>You give us general authorisation to engage sub-processors to provide the platform. We use the following sub-processors:</p>
 
-<h3>6.8 Demonstrating compliance</h3>
-<p>To make available to you all information necessary to demonstrate compliance with Article 28 obligations, and to allow for and contribute to audits, including inspections, conducted by you or another auditor mandated by you. Audits will be at your cost, conducted on reasonable notice, no more than once per year unless there is a documented concern, and subject to confidentiality.</p>
-
-<h2>7. International transfers</h2>
-<p>Client personal data is stored on Supabase infrastructure in the EU (eu-west-1, Ireland). Transfers between the UK and the EEA are covered by mutual adequacy decisions and require no additional safeguards.</p>
-<p>Where any sub-processor handles data outside the UK or EEA, 141kg will rely on a UK adequacy decision or implement appropriate safeguards (for example, Standard Contractual Clauses with the UK addendum, or the UK International Data Transfer Agreement).</p>
-
-<h2>8. Personal data breaches</h2>
-<p>If 141kg becomes aware of a personal data breach affecting client data, we will notify you without undue delay and in any event within 72 hours. The notification will describe:</p>
-<ul>
-  <li>The nature of the breach, including the categories and approximate number of data subjects and records affected.</li>
-  <li>The likely consequences.</li>
-  <li>The measures taken or proposed to address the breach and mitigate its effects.</li>
-  <li>A contact point for further information.</li>
-</ul>
-<p>You remain responsible for notifying the ICO (within 72 hours of becoming aware of the breach, where required) and the affected clients (where required).</p>
-
-<h2>9. Liability</h2>
-<p>Each party's liability under this DPA is subject to the limitations and exclusions set out in the Terms of Service. Nothing in this DPA excludes or limits any liability that cannot be excluded or limited under UK law.</p>
-
-<h2>10. Term and termination</h2>
-<p>This DPA takes effect when you accept the Terms of Service and continues for as long as 141kg processes client personal data on your behalf. It terminates automatically when you close your PT account or stop using the platform.</p>
-
-<h2>11. Deletion or return of data</h2>
-<p>When this DPA terminates, you have 30 days to export your client data using the tools available in the Tenant app or by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>. After 30 days, 141kg will delete the client data from active systems within a further 30 days.</p>
-<p>Backup copies may persist for up to 35 days after deletion from active systems, after which they are overwritten in the normal course of backup rotation.</p>
-<p>141kg may retain anonymised data (data from which no individual client can be identified) and audit log entries (which may include references to client data) for the periods set out in the Privacy Notice, where required for legal, regulatory, or evidential purposes.</p>
-
-<h2>12. Changes to this DPA</h2>
-<p>141kg may update this DPA from time to time to reflect changes in law, sub-processor arrangements, or platform features. When we do, we will:</p>
-<ul>
-  <li>Bump the version number at the top of this page.</li>
-  <li>Notify active PTs by email or in-app message, with a summary of material changes.</li>
-  <li>For material changes that affect your rights, give at least 30 days' notice before the change takes effect.</li>
-</ul>
-<p>If you do not accept a material change, you may close your account before the new version takes effect.</p>
-
-<h2>13. Governing law and jurisdiction</h2>
-<p>This DPA is governed by the laws of England and Wales. Any dispute will be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
-
-<h2>14. Contact</h2>
-<p>For any question about this DPA, contact us at <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</p>
-
-<hr>
-
-<h2>Schedule A: Approved sub-processors</h2>
-<p>As at the version date above, 141kg uses the following sub-processors to deliver the platform:</p>
-<table>
+<table class="sub">
   <thead>
-    <tr><th>Sub-processor</th><th>Purpose and location</th></tr>
+    <tr>
+      <th>Sub-processor</th>
+      <th>Role</th>
+      <th>Location of processing</th>
+      <th>Transfer safeguard</th>
+    </tr>
   </thead>
   <tbody>
-    <tr><td>Supabase</td><td>Database hosting and authentication. Data stored in eu-west-1 (Ireland). Contract in place with Standard Contractual Clauses where applicable.</td></tr>
-    <tr><td>Vercel</td><td>Web application hosting (serves the Tenant and Client apps). EU regions. Contract in place.</td></tr>
-    <tr><td>Cloudflare</td><td>DNS, domain registration, and edge network. Cloudflare receives request metadata (IP addresses, hostnames) to route traffic but does not store application data. Global infrastructure. Contract in place.</td></tr>
+    <tr>
+      <td>Vercel</td>
+      <td>Application hosting</td>
+      <td>United States (with EU/UK regions used where available)</td>
+      <td>UK IDTA / EU SCCs with UK Addendum</td>
+    </tr>
+    <tr>
+      <td>Supabase</td>
+      <td>Database and authentication</td>
+      <td>EU (Frankfurt, AWS)</td>
+      <td>UK adequacy decision for EU; UK IDTA for any non-EU support access</td>
+    </tr>
+    <tr>
+      <td>Fastmail</td>
+      <td>Corporate email (admin@141kg.com and similar)</td>
+      <td>Australia</td>
+      <td>UK IDTA</td>
+    </tr>
+    <tr>
+      <td>Resend</td>
+      <td>Transactional email (invites, password resets, account notifications)</td>
+      <td>United States</td>
+      <td>UK IDTA / EU SCCs with UK Addendum</td>
+    </tr>
   </tbody>
 </table>
-<p>The list above is current as at the version date and supersedes any previous version. If 141kg engages a new sub-processor, this schedule will be updated and the version of the DPA will be bumped.</p>
+
+<p>Before adding or replacing a sub-processor that processes client data, we will notify PTs in the Tenant app at least 14 days in advance. You may object on reasonable data protection grounds by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a> within that period. If we cannot find an acceptable solution, you may terminate this DPA and your account by giving notice in writing, and we will delete or return your client data in line with section 7.</p>
+<p>We remain responsible for the acts and omissions of our sub-processors in respect of their obligations under this DPA, in the same way as for our own.</p>
+
+<h2>11. Personal data breach notification</h2>
+<p>If we become aware of a personal data breach affecting client data, we will:</p>
+<ul>
+  <li>Notify you without undue delay after becoming aware.</li>
+  <li>Provide the information you need to fulfil your own notification obligations to the ICO under UK GDPR Article 33, including (so far as we know) the nature of the breach, the categories and approximate number of data subjects and records affected, the likely consequences, and the measures taken or proposed.</li>
+  <li>Cooperate with you in investigating and mitigating the breach.</li>
+</ul>
+<p>You remain responsible for assessing whether the breach must be notified to the ICO, for making that notification, and for any notification to affected data subjects under Article 34.</p>
+
+<h2>12. Audits</h2>
+<p>You have the right to audit our compliance with this DPA. In practice, we expect most audit needs to be met by:</p>
+<ul>
+  <li>The information set out in this DPA and our Privacy Notice.</li>
+  <li>Written responses to specific questions you send us at <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</li>
+  <li>Copies of relevant policies, sub-processor agreements, and security documentation on request, where we hold them.</li>
+</ul>
+<p>If you require an on-site or third-party audit, we will discuss reasonable arrangements with you, including timing, scope, and which areas can be inspected without compromising the security of other PTs' data. You will pay our reasonable costs of facilitating the audit unless the audit reveals a material breach of this DPA by us.</p>
+
+<h2>13. International transfers</h2>
+<p>Where personal data is transferred outside the UK to a country not covered by a UK adequacy decision, we rely on the UK International Data Transfer Agreement (UK IDTA) or the EU Standard Contractual Clauses with the UK Addendum, as appropriate. The sub-processors and transfer safeguards are set out in section 10.</p>
+<p>If a future change in law affects the validity of these safeguards, we will work with you in good faith to put alternative safeguards in place before continuing the transfers.</p>
+
+<h2>14. Retention and deletion</h2>
+<p>Retention periods for all categories of client data are set out in the retention schedule in our Privacy Notice at <a href="https://legal.141kg.com/privacy/">https://legal.141kg.com/privacy/</a>. That schedule is the single source of truth and overrides any retention period stated elsewhere.</p>
+<p>On termination of your account, you have 30 days to export client data using the tools in the Tenant app or by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>. After that period, your client data is deleted from active systems in line with the retention schedule, except where we are required to retain certain information for legal, accounting, or regulatory reasons. Data may persist in backups for up to 30 days after live deletion in line with normal backup rotation.</p>
+
+<h2>15. Liability</h2>
+<p>The liability provisions in our Terms of Service apply to this DPA. Nothing in this DPA limits or excludes liability that cannot be limited or excluded under UK law.</p>
+<p>You agree to indemnify us against any claim brought by your clients or any third party arising from your failure to comply with this DPA, including (without limitation) any failure to obtain valid Article 9(2)(a) consent, any processing of data about a person under 16, or any failure to make our Privacy Notice available to a client. This does not apply to claims caused by our own breach of this DPA.</p>
+
+<h2>16. Changes to this DPA</h2>
+<p>We may update this DPA from time to time. When we do, we will:</p>
+<ul>
+  <li>Bump the version number at the top of this document.</li>
+  <li>Show you the updated DPA in the Tenant app the next time you log in.</li>
+  <li>Where the change is material, ask you to acknowledge it before continuing.</li>
+</ul>
+<p>If you do not accept a material update, you may terminate this DPA and your account in line with our Terms of Service. We will delete or return your client data in line with section 7.</p>
+
+<h2>17. Governing law</h2>
+<p>This DPA is governed by the laws of England and Wales. Any dispute will be subject to the exclusive jurisdiction of the courts of England and Wales (the same jurisdiction that applies to PTs under our Terms of Service).</p>
+
+<h2>18. Contact</h2>
+<p>For anything about this DPA, email <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</p>
 
 </main>
 
