@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="How 141kg.com collects, uses, and protects your personal data under UK GDPR.">
+<meta name="description" content="What 141kg.com collects, why, how long we keep it, and your rights under UK GDPR.">
 <meta name="robots" content="index,follow">
 <title>Privacy Notice · 141kg</title>
 <style>
@@ -102,29 +102,29 @@
   }
   .meta p { margin: 0; }
   .meta strong { color: var(--text); }
-  table {
+  table.retention {
     width: 100%;
     border-collapse: collapse;
     margin: 0 0 20px;
     font-size: 14px;
   }
-  th, td {
-    border: 1px solid var(--border);
-    padding: 10px 12px;
+  table.retention th, table.retention td {
     text-align: left;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
     vertical-align: top;
   }
-  th {
+  table.retention th {
     background: var(--code-bg);
     font-weight: 700;
+    font-size: 13px;
   }
-  .ico {
-    background: var(--code-bg);
-    border-left: 3px solid var(--accent);
-    padding: 14px 16px;
-    margin: 16px 0;
-    font-size: 14px;
-    line-height: 1.7;
+  table.retention td {
+    color: var(--text-muted);
+  }
+  table.retention td:first-child {
+    color: var(--text);
+    font-weight: 600;
   }
   footer.site {
     border-top: 1px solid var(--border);
@@ -145,6 +145,8 @@
     h2 { font-size: 19px; }
     header.site { padding: 14px 16px; }
     main { padding: 24px 16px 48px; }
+    table.retention { font-size: 13px; }
+    table.retention th, table.retention td { padding: 8px 10px; }
   }
 </style>
 </head>
@@ -166,164 +168,234 @@
 <h1>Privacy Notice</h1>
 
 <div class="meta">
-  <p><strong>Version:</strong> 2026-05-25-a</p>
-  <p><strong>Effective from:</strong> 25 May 2026</p>
+  <p><strong>Version:</strong> 2026-05-26-a</p>
+  <p><strong>Effective from:</strong> 26 May 2026</p>
 </div>
 
-<h2>1. Who we are</h2>
-<p>141kg.com is operated by 141kg Ltd, a company registered in England and Wales under company number [COMPANY NUMBER], with registered office at Gables House, 62 Kenilworth Road, Leamington Spa, CV32 6JX. We are the <strong>data controller</strong> for the personal data described in this notice, except where stated otherwise in section 4 below.</p>
-<p>Contact us at <a href="mailto:admin@141kg.com">admin@141kg.com</a> for any data protection request, including access, correction, deletion, portability, or restriction.</p>
-<p>We are not currently required to appoint a Data Protection Officer (DPO) under UK GDPR. If that changes, we will update this notice.</p>
-
-<h2>2. What this notice covers</h2>
-<p>This notice explains:</p>
+<h2>1. About this notice</h2>
+<p>This notice explains what personal data 141kg collects when you use the platform, why we collect it, what we do with it, how long we keep it, and the rights you have under UK GDPR.</p>
+<p>It applies to:</p>
 <ul>
-  <li>What personal data we collect.</li>
-  <li>Why we collect it and what we do with it.</li>
-  <li>Our lawful basis under UK GDPR for processing it.</li>
-  <li>Who we share it with.</li>
-  <li>How long we keep it.</li>
-  <li>Your rights and how to exercise them.</li>
+  <li>Personal trainers (PTs) using the Tenant app at pt.141kg.com.</li>
+  <li>Clients using the Client app at client.141kg.com.</li>
+  <li>Visitors to our legal site at legal.141kg.com.</li>
 </ul>
-<p>It applies to everyone who uses the 141kg platform: personal trainers (PTs) who use the Tenant app, and clients of those trainers who use the Client app.</p>
+<p>If you are a client, please also read the section below on the two relationships, which explains the difference between the data we control and the data your PT controls.</p>
 
-<h2>3. What we collect</h2>
+<h2>2. Who we are</h2>
+<p>The controller of your personal data is 141kg Ltd, a company registered in England and Wales under company number [COMPANY NUMBER], with registered office at Gables House, 62 Kenilworth Road, Leamington Spa, CV32 6JX.</p>
+<p>You can contact us about anything in this notice at <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</p>
+<p>We are not required to appoint a Data Protection Officer under UK GDPR Article 37 because our processing does not meet the thresholds for mandatory appointment. Privacy questions are handled by the directors and reach us via the email above.</p>
 
-<h3>From PTs (Tenant app users)</h3>
+<h2>3. The two relationships (important for clients)</h2>
+<p>When you use the Client app, two separate UK GDPR relationships apply at the same time. Understanding the difference matters because your rights are exercised against different people in each case.</p>
+<p><strong>Where 141kg is the controller.</strong> For your account itself (your email address, password hash, date of birth, login activity, account preferences, and the technical operation of the app on your device), 141kg decides what is collected and why. This notice covers that. You exercise your rights against us.</p>
+<p><strong>Where your PT is the controller and 141kg is the processor.</strong> For the training data your PT enters about you and that you enter about yourself (workouts, sets, reps, body weight, heart rate, RPE, session calories, session notes, goals), your PT decides what is collected and why. We process it on their behalf under our Data Processing Agreement at <a href="https://legal.141kg.com/dpa/">https://legal.141kg.com/dpa/</a>. Your PT should have their own privacy notice explaining this. You exercise rights over that data against your PT in the first instance. If your PT cannot be reached, contact us at <a href="mailto:admin@141kg.com">admin@141kg.com</a> and we will help.</p>
+
+<h2>4. What we collect and why</h2>
+<p>We collect personal data in the following categories. The lawful basis for each is named below, as required by UK GDPR Article 13(1)(c).</p>
+
+<h3>Account data (controller: 141kg)</h3>
 <ul>
-  <li><strong>Account data:</strong> name, email address, password (stored as a salted hash by Supabase), business name and brand details (logo, colour).</li>
-  <li><strong>Authentication data:</strong> login timestamps, IP address, browser and device information.</li>
-  <li><strong>Content you create:</strong> exercise libraries, workout templates, session plans, set-by-set logs you record during sessions, planning and session notes.</li>
-  <li><strong>Data you enter about your clients:</strong> client name, contact details, date of birth, sex, body weight, training history, injury notes against specific body areas, training goals, and any other notes you record. See section 4 for the controller/processor split that applies to this data.</li>
-  <li><strong>Consent records:</strong> timestamp, policy version, IP address, and user agent at the moment you accept or decline our terms.</li>
-</ul>
-
-<h3>From clients (Client app users)</h3>
-<ul>
-  <li><strong>Account data:</strong> name, email address, password (stored as a salted hash by Supabase).</li>
-  <li><strong>Profile data:</strong> date of birth (used for age-based leaderboard grouping and to confirm you are 16 or over), sex (used for like-for-like leaderboard comparison), training goals you record.</li>
-  <li><strong>Authentication data:</strong> login timestamps, IP address, browser and device information.</li>
-  <li><strong>Training data:</strong> exercises you log, sets, reps, weights you lift, time-under-tension where applicable, session dates and timings, body weight (recorded in kg or stones and pounds), injury notes you log against specific body areas, recovery and wellbeing entries (where the feature is enabled), leaderboard display name (if you opt in).</li>
-  <li><strong>Session metrics (optional, per session):</strong> for sessions you finish in the Client app, and for sessions logged for you by your trainer, you can optionally record your average heart rate, calories burned, and a Rate of Perceived Exertion (RPE) score of 0 to 10. These are subjective and self-reported. You do not have to provide them.</li>
-  <li><strong>Consent records:</strong> timestamp, policy version, IP address, and user agent at the moment you accept or decline our terms.</li>
+  <li><strong>What:</strong> Your name, email address, password hash, date of birth, role (PT or client), tier (Essential / Pro / Elite), preferences, and (for PTs) business name and brand colour settings.</li>
+  <li><strong>Why:</strong> To create and operate your account.</li>
+  <li><strong>Lawful basis:</strong> Performance of a contract (Article 6(1)(b)). For date of birth, the additional purpose is age verification, which is a legal obligation and a substantial public interest under UK GDPR Schedule 1 paragraph 11.</li>
 </ul>
 
-<h3>From everyone</h3>
+<h3>Authentication and security data (controller: 141kg)</h3>
 <ul>
-  <li><strong>Technical data:</strong> error logs, page load timestamps, anonymised usage statistics.</li>
+  <li><strong>What:</strong> Login timestamps, IP addresses, user agent strings, multi-factor authentication factors (for PTs), failed login attempts, password reset events.</li>
+  <li><strong>Why:</strong> To authenticate you, prevent unauthorised access, detect abuse, and meet our security obligations under UK GDPR Article 32.</li>
+  <li><strong>Lawful basis:</strong> Legitimate interests (Article 6(1)(f)). The interest is keeping accounts secure. Our balancing test concludes that this is a low-impact, expected use of the data that any reasonable user would assume is happening.</li>
 </ul>
 
-<p>The personal data listed above is used for fitness logging and training purposes. We do not ask for, and you should not enter, special category data under UK GDPR Article 9 (such as health diagnoses, clinical records, sexual orientation, ethnicity, or religious beliefs). Body weight, training metrics, heart rate, calories, RPE, and injury notes captured in the platform are fitness data, not medical data, and we do not treat them as such. Injury notes in particular should describe how the injury affects training (for example, "tweaked lower back, avoid heavy hinge work for two weeks"), not clinical diagnoses or treatment plans.</p>
-
-<h2>4. Controller / processor relationship for client data</h2>
-<p>The relationship between 141kg, the PT, and the client requires explanation.</p>
+<h3>Communications data (controller: 141kg)</h3>
 <ul>
-  <li>For <strong>PT account data</strong> (the PT's own account details, login data, billing data), 141kg is the <strong>controller</strong>.</li>
-  <li>For <strong>client account data and training data</strong> entered by the client themselves into the Client app, 141kg is the <strong>controller</strong> under the contract with the client. This includes session metrics (heart rate, calories, RPE) the client enters themselves, whether against a client-logged session or a trainer-logged session.</li>
-  <li>For <strong>data the PT enters about the client</strong> in the Tenant app (workout history, notes, body weight records entered by the PT), the <strong>PT is the controller and 141kg is the processor</strong>. The PT processes that data under their own contract with the client. 141kg processes it on the PT's instructions, under a Data Processing Agreement which forms part of our Terms of Service.</li>
+  <li><strong>What:</strong> Invite emails, password reset emails, account notifications, and any messages you send us at admin@141kg.com.</li>
+  <li><strong>Why:</strong> To send you the communications you need to use the platform and to respond to your queries.</li>
+  <li><strong>Lawful basis:</strong> Performance of a contract for transactional emails. Legitimate interests for responding to your queries.</li>
 </ul>
-<p>In practice this means: if you are a client and you want to know why your PT recorded a particular piece of data about you, ask your PT. If you want to know how 141kg stores or secures that data, contact us at <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</p>
 
-<h2>5. Why we process your data, and our lawful basis</h2>
-<table>
-  <thead>
-    <tr><th>Purpose</th><th>Lawful basis (UK GDPR Article 6)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Running your account and the platform</td><td>Contract, Art 6(1)(b)</td></tr>
-    <tr><td>Authenticating you when you log in</td><td>Contract, Art 6(1)(b)</td></tr>
-    <tr><td>Showing you your own training data</td><td>Contract, Art 6(1)(b)</td></tr>
-    <tr><td>Sharing client data with the PT who manages them</td><td>Contract, Art 6(1)(b)</td></tr>
-    <tr><td>Showing your name on the leaderboard (Client app)</td><td>Consent, Art 6(1)(a), opted in separately</td></tr>
-    <tr><td>Improving the platform (error logs, usage analytics)</td><td>Legitimate interests, Art 6(1)(f)</td></tr>
-    <tr><td>Complying with legal obligations (tax, regulatory)</td><td>Legal obligation, Art 6(1)(c)</td></tr>
-    <tr><td>Sending you service emails (account, security, terms updates)</td><td>Contract, Art 6(1)(b)</td></tr>
-    <tr><td>Sending you marketing emails</td><td>Consent, Art 6(1)(a), opted in separately</td></tr>
-  </tbody>
-</table>
-<p>We will only send marketing emails to people who have opted in. If we introduce marketing in the future, we will ask you separately at that time. You can withdraw consent at any time using the unsubscribe link in any marketing email.</p>
-
-<h2>6. Who we share your data with</h2>
-<p>We share your data only with the following:</p>
+<h3>Training data (controller: your PT, when entered by them; controller: you, when self-logged)</h3>
 <ul>
-  <li><strong>Your PT or your clients,</strong> as appropriate to the platform's function. If you are a client, your PT can see the data you enter. If you are a PT, you can see the data your clients enter. This is the core function of the platform.</li>
-  <li><strong>Our hosting and infrastructure providers:</strong> Vercel (web hosting), Supabase (database and authentication), and Cloudflare (DNS and edge network). All three act as our processors under written agreements. Vercel and Supabase store our data within the EEA (Ireland, eu-west-1). Cloudflare handles DNS resolution and edge routing only and does not store application data.</li>
-  <li><strong>Other professional advisers</strong> (accountants, solicitors, auditors) where strictly necessary and under confidentiality.</li>
-  <li><strong>Law enforcement or regulators</strong> where we are legally required to disclose data.</li>
+  <li><strong>What:</strong> Workouts, exercises, sets, reps, weights, times, body areas, session dates and times, session notes, goals, leaderboard opt-in, training history.</li>
+  <li><strong>Why:</strong> To record your training and surface observations from it.</li>
+  <li><strong>Lawful basis (when PT is controller):</strong> The PT's lawful basis, usually contract or legitimate interests. Set out in the PT's own privacy notice.</li>
+  <li><strong>Lawful basis (when you self-log):</strong> Performance of a contract with us for the Client app.</li>
 </ul>
-<p>We do not sell your data. We do not share your data with advertisers. We do not use your data to train AI models.</p>
 
-<h2>7. Where your data is stored</h2>
-<p>Your data is stored on Supabase infrastructure in the <strong>eu-west-1 region (Ireland)</strong>, which is within the European Economic Area (EEA). Data transfers between the UK and the EEA are covered by mutual adequacy decisions; no additional transfer safeguards are required.</p>
-<p>Some operational tools (email delivery, error monitoring) may transfer limited data outside the EEA. Where this happens, we use providers covered by appropriate transfer mechanisms (UK adequacy decisions or Standard Contractual Clauses with the UK addendum).</p>
+<h3>Special category data (controller: your PT, when entered by them; controller: you, when self-logged)</h3>
+<ul>
+  <li><strong>What:</strong> Body weight, heart rate, rate of perceived exertion (RPE), and session calories.</li>
+  <li><strong>Why:</strong> To record health-relevant training data and surface observations from it.</li>
+  <li><strong>Lawful basis:</strong> Explicit consent under UK GDPR Article 9(2)(a). You will be asked for this consent separately, before the data is recorded for the first time. You can withdraw your consent at any time in the app settings or by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>. Withdrawing consent does not affect processing carried out before withdrawal.</li>
+</ul>
+<p>If you are a PT entering this category of data about a client, the Tenant app provides a consent capture screen for the client to give explicit consent. You must use this before entering special category data about any client.</p>
+
+<h3>Technical and device data (controller: 141kg)</h3>
+<ul>
+  <li><strong>What:</strong> Browser type and version, operating system, screen size, language preference, error logs.</li>
+  <li><strong>Why:</strong> To make sure the platform works on your device and to diagnose problems.</li>
+  <li><strong>Lawful basis:</strong> Legitimate interests. The interest is providing a working service. This data is not used for analytics, profiling, or advertising.</li>
+</ul>
+
+<h2>5. Special category data, in plain terms</h2>
+<p>Some of the data the platform records is treated as a "special category" of personal data under UK GDPR Article 9. This category has tighter rules because it can reveal information about your health. On this platform, the special categories are:</p>
+<ul>
+  <li>Body weight measurements.</li>
+  <li>Heart rate (per session, optional).</li>
+  <li>Rate of perceived exertion (RPE) on a 0 to 10 scale (per session, optional).</li>
+  <li>Session calories (per session, optional, user-entered estimate).</li>
+</ul>
+<p>For this category we rely on your <strong>explicit consent</strong> under Article 9(2)(a). This is a stricter standard than ordinary consent: it must be specific, informed, and given by a clear affirmative action.</p>
+<p>Because this is special category data, the app asks for your consent in two parts on the consent capture screen:</p>
+<ul>
+  <li><strong>Agreement:</strong> a tick-box confirming you consent to 141kg recording body weight, heart rate, RPE, and session calories as part of your training records.</li>
+  <li><strong>Acknowledgement:</strong> a separate tick-box confirming you understand this data is treated as special category health data under UK GDPR Article 9, and that you can withdraw consent at any time.</li>
+</ul>
+<p>Both tick-boxes must be ticked for consent to be valid. Without both, the platform will not record this data about you.</p>
+<p>You can withdraw consent at any time in the app settings or by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>. When you do, we stop the relevant processing immediately. Data already recorded remains in your history unless you also ask for it to be deleted (which is a separate right, covered in section 9).</p>
+<p><strong>About the Recovery feature.</strong> The Recovery indicator shown in the app is computed from your training data (volume per body area and time elapsed since you last trained that area). It is not a separate data point you or your PT enter, and we do not record sleep, soreness, mood, or stress ratings. Because Recovery is derived from training data, it does not require separate special category consent: its lawful basis is the same as the underlying training data it is computed from. If we ever add user-entered recovery or wellbeing fields (such as a sleep tracker or soreness slider), we will update this section and ask for fresh consent before recording that data.</p>
+
+<h2>6. Where we store your data</h2>
+<p>Your data is stored on infrastructure operated by our sub-processors:</p>
+<ul>
+  <li><strong>Vercel</strong> hosts our applications. Vercel is headquartered in the United States but offers EU and UK regions which we use where available.</li>
+  <li><strong>Supabase</strong> hosts our database and provides authentication. Supabase is headquartered in Singapore and uses AWS infrastructure. We use the EU (Frankfurt) region.</li>
+  <li><strong>Fastmail</strong> hosts our corporate email (admin@141kg.com and similar). Fastmail is headquartered in Australia.</li>
+  <li><strong>Resend</strong> sends transactional email (invites, password resets, account notifications). Resend is headquartered in the United States.</li>
+</ul>
+<p>Where data is transferred outside the UK to a country not covered by an adequacy decision, we rely on the <strong>UK International Data Transfer Agreement (UK IDTA)</strong> or the <strong>EU Standard Contractual Clauses with the UK Addendum</strong>, in line with UK GDPR Articles 44 to 49. These are the safeguards required to transfer personal data outside the UK. You can request a copy of the safeguards in place for any specific transfer by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>. This is your right under UK GDPR Article 13(2)(e).</p>
+
+<h2>7. Automated decision-making</h2>
+<p>This statement is provided under UK GDPR Article 13(2)(f).</p>
+<p><strong>We do not make automated decisions about you that produce legal effects or similarly significant effects.</strong></p>
+<p>The platform computes summaries, trends, and observations from data you and your PT have entered (for example, weekly tonnage, frequency of training, changes in load on specific exercises, body area volume). These are shown to your PT as part of their analysis view, and to you in your own progress view. They are observations, not decisions. They do not change anything about your access to the platform, your tier, your data, or any external service. Decisions about your training are made by your PT, not by the platform.</p>
+<p>If this ever changes (for example, if a future feature uses automated decision-making in a way that produces a significant effect), we will update this section and ask for your consent before the change applies to you.</p>
 
 <h2>8. How long we keep your data</h2>
-<p>We apply two retention periods, depending on the type of data.</p>
-<p><strong>Fitness data: 2 years of account inactivity.</strong> Workout sets, body weight records, recovery entries, session metrics (heart rate, calories, RPE), and other training data are deleted automatically after 2 years during which you have not logged in or recorded a session. We consider this an appropriate balance between giving you continuity if you return to training after a break, and minimising the personal data we hold.</p>
-<p><strong>Account record and audit logs: 6 years from account closure.</strong> Your account details, consent records, and audit logs (records of consent, login activity, security events) are retained for 6 years after your account is closed. This aligns with:</p>
+<p>This is the single retention schedule for the 141kg platform. It is referenced by our Terms of Service and our Data Processing Agreement, and overrides any retention period stated elsewhere.</p>
+
+<table class="retention">
+  <thead>
+    <tr>
+      <th>Data category</th>
+      <th>Retention period</th>
+      <th>Trigger for deletion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Active account data (PT or client)</td>
+      <td>For the life of the account</td>
+      <td>Account closure</td>
+    </tr>
+    <tr>
+      <td>Training data (workouts, sets, body weight, special category data)</td>
+      <td>For the life of the account</td>
+      <td>Account closure or deletion request</td>
+    </tr>
+    <tr>
+      <td>PT account after closure (transitional period for client data export)</td>
+      <td>30 days after closure</td>
+      <td>Automatic deletion 30 days after closure</td>
+    </tr>
+    <tr>
+      <td>Authentication logs (login events, IP, user agent)</td>
+      <td>12 months</td>
+      <td>Rolling deletion</td>
+    </tr>
+    <tr>
+      <td>Failed login attempts and security events</td>
+      <td>12 months</td>
+      <td>Rolling deletion</td>
+    </tr>
+    <tr>
+      <td>Transactional emails (invites, password resets)</td>
+      <td>30 days at sub-processor (Resend), then deleted</td>
+      <td>Automatic at Resend</td>
+    </tr>
+    <tr>
+      <td>Inactive accounts (no login for 24 months)</td>
+      <td>Closed and deleted after notice</td>
+      <td>Reasonable notice, then deletion</td>
+    </tr>
+    <tr>
+      <td>Backups (containing any of the above)</td>
+      <td>Up to 30 days after the live record is deleted</td>
+      <td>Backup rotation</td>
+    </tr>
+    <tr>
+      <td>Anonymised aggregate data</td>
+      <td>Indefinite (cannot be linked to any individual)</td>
+      <td>Not applicable</td>
+    </tr>
+    <tr>
+      <td>Records we are required to keep by law (accounting, tax)</td>
+      <td>As required by the relevant law (typically 6 years)</td>
+      <td>End of statutory retention period</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>When we delete data, we remove it from active systems first. Data may persist in backups for up to 30 days after that, in line with normal backup rotation. After that point it is gone.</p>
+
+<h2>9. Your rights</h2>
+<p>Under UK GDPR you have the following rights over your personal data. To exercise any of them, email <a href="mailto:admin@141kg.com">admin@141kg.com</a>. We will respond within 30 days. There is no fee unless the request is manifestly unfounded or excessive.</p>
 <ul>
-  <li>The UK statute of limitations for contract claims (Limitation Act 1980, six years).</li>
-  <li>HMRC business record retention requirements for limited companies.</li>
+  <li><strong>Access (Article 15):</strong> Ask us for a copy of the personal data we hold about you.</li>
+  <li><strong>Rectification (Article 16):</strong> Ask us to correct data that is inaccurate or incomplete. Most data can be corrected by you directly in the app.</li>
+  <li><strong>Erasure (Article 17):</strong> Ask us to delete your data. We will delete it in line with the retention schedule above, except where we are required to keep it by law.</li>
+  <li><strong>Restriction (Article 18):</strong> Ask us to stop processing your data in certain circumstances (for example, while we investigate a complaint).</li>
+  <li><strong>Portability (Article 20):</strong> Ask us for your data in a machine-readable format, or ask us to send it to another provider where technically possible. PTs can export this directly from the Tenant app. Clients can request it by email.</li>
+  <li><strong>Object (Article 21):</strong> Object to processing we carry out under legitimate interests.</li>
+  <li><strong>Withdraw consent (Article 7(3)):</strong> Where processing is based on consent (in particular, special category data), withdraw your consent at any time. We stop the relevant processing immediately. Withdrawal does not affect processing already carried out.</li>
+  <li><strong>Complain to the ICO:</strong> If you are not happy with how we handle your data, you can complain to the UK Information Commissioner's Office at <a href="https://ico.org.uk">ico.org.uk</a>, Wycliffe House, Water Lane, Wilmslow, Cheshire SK9 5AF. We would prefer you contact us first so we have a chance to put things right.</li>
 </ul>
-<p>After the relevant retention period ends we delete the data, or anonymise it so it can no longer be linked to you.</p>
-<p>You can ask us to delete your data sooner. We will do so unless we are required by law to keep it. See section 10 for how to make the request.</p>
+<p>If your data is controlled by your PT (training data, special category data), you exercise these rights against your PT in the first instance. If your PT cannot be reached, contact us and we will help.</p>
 
-<h2>9. Security</h2>
-<p>We take security seriously. The platform uses:</p>
+<h2>10. Children</h2>
+<p>The 141kg platform is not available to anyone under 16 years old. We enforce this by capturing date of birth at signup and blocking accounts that indicate the person is under 16. PTs are required by our Terms of Service not to enter data about anyone under 16 and to confirm a client's age before inviting them.</p>
+<p>If we become aware that we hold data about someone under 16, we will delete it without delay. If you believe we hold such data, please tell us at <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</p>
+
+<h2>11. Cookies and tracking</h2>
+<p>We use only strictly necessary cookies and storage on your device. These are required to keep you logged in, remember your preferences, and operate the app on your device. They are not used for analytics, advertising, or profiling.</p>
+<p>We do not use Google Analytics, Facebook Pixel, Hotjar, Mixpanel, Amplitude, Segment, PostHog, Vercel Analytics, or any equivalent service. We do not embed third-party tracking scripts. We do not sell your data and we do not share it with advertisers.</p>
+<p>Our sub-processors (Vercel and Supabase) log technical request data (IP address, request path, timestamp) for security and service operation. This is strictly necessary and is covered by the legitimate interests basis in section 4.</p>
+
+<h2>12. Security</h2>
+<p>We take security seriously. Specifically:</p>
 <ul>
-  <li>HTTPS for all data in transit.</li>
-  <li>Encryption at rest on the Supabase database.</li>
-  <li>Row-level security (RLS) policies that restrict each user to seeing only their own data.</li>
-  <li>Salted password hashing handled by Supabase Auth.</li>
-  <li>Optional multi-factor authentication (MFA) for PT accounts.</li>
+  <li>All connections to the platform use HTTPS (TLS 1.2 or later).</li>
+  <li>Your data is encrypted at rest by our database provider.</li>
+  <li>PT accounts are protected by mandatory multi-factor authentication using a TOTP authenticator app.</li>
+  <li>Client accounts use password-only authentication, which is standard for consumer fitness apps. We may add MFA for clients in future, but we have not committed to a timeline.</li>
+  <li>Database access controls (row level security) ensure that one PT cannot see another PT's data, and one client cannot see another client's data.</li>
+  <li>We use the principle of least privilege for our own access to client data: we access it only where necessary to operate the platform or to respond to a support request from the PT or client.</li>
 </ul>
-<p>No system is perfectly secure. If you believe your account has been compromised, change your password immediately and contact <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</p>
+<p>If there is a personal data breach that is likely to result in a risk to your rights and freedoms, we will notify the ICO within 72 hours of becoming aware of it, and we will notify you without undue delay where the risk to you is high. This is required by UK GDPR Articles 33 and 34.</p>
 
-<h2>10. Your rights under UK GDPR</h2>
-<p>You have the following rights:</p>
+<h2>13. Sub-processors</h2>
+<p>The following sub-processors handle your personal data on our behalf. The full list with role, location, and safeguards is set out in our Data Processing Agreement at <a href="https://legal.141kg.com/dpa/">https://legal.141kg.com/dpa/</a>.</p>
 <ul>
-  <li><strong>Right of access (Art 15):</strong> ask us for a copy of your data.</li>
-  <li><strong>Right to rectification (Art 16):</strong> ask us to correct inaccurate data.</li>
-  <li><strong>Right to erasure (Art 17):</strong> ask us to delete your data, subject to legal retention requirements.</li>
-  <li><strong>Right to restriction of processing (Art 18):</strong> ask us to stop processing your data in specific ways.</li>
-  <li><strong>Right to data portability (Art 20):</strong> receive your data in a machine-readable format and have it transmitted to another controller where technically feasible.</li>
-  <li><strong>Right to object (Art 21):</strong> object to processing based on legitimate interests.</li>
-  <li><strong>Right to withdraw consent (Art 7(3)):</strong> where we rely on consent, you can withdraw it at any time. This does not affect the lawfulness of processing before withdrawal.</li>
-  <li><strong>Right to complain:</strong> if you believe we have mishandled your data, you have the right to complain to the Information Commissioner's Office (ICO). We would prefer you came to us first so we can try to resolve the issue.</li>
+  <li><strong>Vercel</strong> (United States): application hosting.</li>
+  <li><strong>Supabase</strong> (Singapore, EU region for our data): database and authentication.</li>
+  <li><strong>Fastmail</strong> (Australia): corporate email.</li>
+  <li><strong>Resend</strong> (United States): transactional email (invites, password resets, notifications).</li>
 </ul>
-<p>To exercise any of these rights, email <a href="mailto:admin@141kg.com">admin@141kg.com</a>. We will respond within one month. There is no fee, except in cases of manifestly unfounded or excessive requests, where we may charge a reasonable fee or refuse.</p>
+<p>If we add or change a sub-processor, we will update the DPA and notify PTs in the app.</p>
 
-<div class="ico">
-  <strong>The ICO</strong><br>
-  Information Commissioner's Office<br>
-  Wycliffe House, Water Lane<br>
-  Wilmslow, Cheshire SK9 5AF<br>
-  Helpline: 0303 123 1113<br>
-  Website: <a href="https://ico.org.uk">https://ico.org.uk</a>
-</div>
-
-<h2>11. Cookies and similar technologies</h2>
-<p>The platform uses essential cookies and similar technologies (local storage) for:</p>
-<ul>
-  <li>Keeping you logged in.</li>
-  <li>Remembering your preferences (theme, brand colour cache).</li>
-  <li>Authentication tokens issued by Supabase.</li>
-</ul>
-<p>These are strictly necessary for the platform to function and do not require consent under PECR. We do not use advertising cookies, tracking cookies, or third-party analytics cookies on the platform itself.</p>
-
-<h2>12. Children</h2>
-<p>The Client app is intended for users aged 16 and over. If a PT invites a client under 16, the PT is responsible for obtaining parental or guardian consent before adding that client. The platform is not designed for users under 16 and we do not knowingly collect data from children under 16.</p>
-
-<h2>13. Changes to this notice</h2>
+<h2>14. Changes to this notice</h2>
 <p>We may update this notice from time to time. When we do, we will:</p>
 <ul>
   <li>Bump the version number at the top of this document.</li>
-  <li>Show you the updated notice in the app, with a tick-box, the next time you log in.</li>
-  <li>Record your acknowledgement of the new version with a timestamp, the version number, your IP address, and your device.</li>
+  <li>Show you the updated notice in the app the next time you log in.</li>
+  <li>Where the change is material, ask you to acknowledge it before continuing.</li>
 </ul>
+<p>Previous versions are available on request.</p>
 
-<h2>14. Contact</h2>
-<p>For any privacy question or to exercise any right under UK GDPR, contact us at <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</p>
+<h2>15. Contact</h2>
+<p>For anything about your data, including to exercise any of the rights in section 9, email <a href="mailto:admin@141kg.com">admin@141kg.com</a>.</p>
 
 </main>
 
