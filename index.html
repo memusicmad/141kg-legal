@@ -1,186 +1,220 @@
-<!doctype html>
-<html lang="en-GB">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Legal documents for the 141kg platform: Terms of Service, Privacy Notice, Data Processing Agreement, and PT Client Privacy Notice template.">
+<meta name="robots" content="index,follow">
 <title>Legal · 141kg</title>
-<meta name="description" content="Legal documents for the 141kg platform.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #fafaf7;
-    --surface: #ffffff;
-    --ink: #15171a;
-    --ink-soft: #44474d;
-    --ink-faint: #6b6f76;
-    --rule: #e6e4dc;
-    --accent: #b91c1c;
-    --max: 720px;
+    --bg: #ffffff;
+    --text: #111827;
+    --text-muted: #4b5563;
+    --text-faint: #6b7280;
+    --link: #1f2937;
+    --link-hover: #000000;
+    --border: #e5e7eb;
+    --card-bg: #f9fafb;
+    --code-bg: #f3f4f6;
   }
   * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
   body {
-    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
     background: var(--bg);
-    color: var(--ink);
-    font-family: 'Fraunces', Georgia, serif;
-    font-size: 18px;
+    color: var(--text);
     line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
   }
   header.site {
-    border-bottom: 1px solid var(--rule);
-    background: var(--surface);
-  }
-  header.site .inner {
-    max-width: var(--max);
-    margin: 0 auto;
+    border-bottom: 1px solid var(--border);
     padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
   }
   header.site .brand {
-    font-family: 'Inter', system-ui, sans-serif;
-    font-weight: 700;
-    font-size: 17px;
-    color: var(--ink);
+    font-weight: 800;
+    font-size: 18px;
     text-decoration: none;
+    color: var(--text);
+    letter-spacing: -0.01em;
   }
-  header.site .brand span { color: var(--accent); }
+  header.site nav { display: flex; gap: 18px; }
+  header.site nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  header.site nav a:hover { color: var(--link-hover); }
   main {
-    max-width: var(--max);
+    max-width: 760px;
     margin: 0 auto;
-    padding: 72px 24px;
-    flex: 1;
-    width: 100%;
+    padding: 36px 24px 64px;
   }
-  .eyebrow {
-    font-family: 'Inter', system-ui, sans-serif;
+  .crumb {
     font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--accent);
-    margin: 0 0 12px;
+    letter-spacing: 0.08em;
+    color: var(--text-faint);
+    font-weight: 700;
+    margin-bottom: 6px;
   }
   h1 {
-    font-family: 'Fraunces', Georgia, serif;
-    font-weight: 500;
-    font-size: clamp(34px, 5vw, 46px);
-    line-height: 1.1;
-    letter-spacing: -0.01em;
-    margin: 0 0 18px;
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0 0 12px;
+    letter-spacing: -0.02em;
+    font-weight: 800;
   }
-  .lede {
-    font-size: 19px;
-    color: var(--ink-soft);
-    margin: 0 0 48px;
-    max-width: 560px;
+  .intro {
+    font-size: 17px;
+    color: var(--text-muted);
+    margin: 0 0 36px;
   }
-  .docs {
+  .cards {
     display: grid;
+    grid-template-columns: 1fr;
     gap: 16px;
-    grid-template-columns: repeat(3, 1fr);
   }
-  @media (max-width: 700px) {
-    .docs { grid-template-columns: 1fr; }
-  }
-  .docs a.card {
+  .card {
     display: block;
-    padding: 28px 26px;
-    background: var(--surface);
-    border: 1px solid var(--rule);
-    border-radius: 6px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 22px 24px;
     text-decoration: none;
-    color: var(--ink);
-    transition: border-color 0.15s ease, transform 0.15s ease;
+    color: var(--text);
+    transition: border-color 0.15s, background 0.15s;
   }
-  .docs a.card:hover {
-    border-color: var(--accent);
-    transform: translateY(-2px);
+  .card:hover {
+    border-color: var(--text);
+    background: #fff;
   }
-  .docs a.card .kicker {
-    font-family: 'Inter', system-ui, sans-serif;
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.12em;
+  .card .label {
+    font-size: 12px;
     text-transform: uppercase;
-    color: var(--ink-faint);
-    margin: 0 0 8px;
-  }
-  .docs a.card .title {
-    font-family: 'Inter', system-ui, sans-serif;
+    letter-spacing: 0.08em;
+    color: var(--text-faint);
     font-weight: 700;
-    font-size: 19px;
-    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .card h2 {
     margin: 0 0 6px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
   }
-  .docs a.card .desc {
-    font-size: 15px;
-    color: var(--ink-soft);
-    margin: 0;
+  .card p {
+    margin: 0 0 4px;
+    font-size: 14px;
+    color: var(--text-muted);
   }
-  .docs a.card .arrow {
-    font-family: 'Inter', system-ui, sans-serif;
+  .card .meta {
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--text-faint);
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  .section-heading {
     font-size: 13px;
-    color: var(--accent);
-    margin-top: 14px;
-    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-faint);
+    font-weight: 700;
+    margin: 40px 0 12px;
   }
   footer.site {
-    border-top: 1px solid var(--rule);
-    background: var(--surface);
-  }
-  footer.site .inner {
-    max-width: var(--max);
-    margin: 0 auto;
+    border-top: 1px solid var(--border);
     padding: 24px;
-    font-family: 'Inter', system-ui, sans-serif;
+    text-align: center;
+    color: var(--text-faint);
     font-size: 13px;
-    color: var(--ink-faint);
+  }
+  footer.site a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: 600;
+  }
+  footer.site a:hover { color: var(--link-hover); }
+  @media (max-width: 600px) {
+    h1 { font-size: 28px; }
+    header.site { padding: 14px 16px; }
+    main { padding: 24px 16px 48px; }
+    .card { padding: 18px 20px; }
   }
 </style>
 </head>
 <body>
 
 <header class="site">
-  <div class="inner">
-    <a class="brand" href="/">141<span>kg</span></a>
-  </div>
+  <a href="https://legal.141kg.com/" class="brand">141kg</a>
+  <nav>
+    <a href="https://legal.141kg.com/terms/">Terms</a>
+    <a href="https://legal.141kg.com/privacy/">Privacy</a>
+    <a href="https://legal.141kg.com/dpa/">DPA</a>
+    <a href="https://legal.141kg.com/pt-privacy/">PT template</a>
+  </nav>
 </header>
 
 <main>
-  <p class="eyebrow">Legal</p>
-  <h1>Our terms, plainly written.</h1>
-  <p class="lede">The contract you sign up to, and what we do with your data. Both documents are versioned and dated.</p>
 
-  <div class="docs">
-    <a class="card" href="/terms/">
-      <p class="kicker">Document 01</p>
-      <p class="title">Terms of Service</p>
-      <p class="desc">The contract between you and 141kg when you use the platform.</p>
-      <span class="arrow">Read →</span>
-    </a>
-    <a class="card" href="/privacy/">
-      <p class="kicker">Document 02</p>
-      <p class="title">Privacy Notice</p>
-      <p class="desc">What we collect, why, how long we keep it, and your rights under UK GDPR.</p>
-      <span class="arrow">Read →</span>
-    </a>
-    <a class="card" href="/dpa/">
-      <p class="kicker">Document 03</p>
-      <p class="title">Data Processing Agreement</p>
-      <p class="desc">For PTs: how 141kg handles client data on your behalf as a UK GDPR processor.</p>
-      <span class="arrow">Read →</span>
-    </a>
-  </div>
+<div class="crumb">Legal</div>
+
+<h1>Legal documents</h1>
+<p class="intro">The agreements that govern your use of the 141kg platform, plus a privacy notice template for personal trainers to give to their clients.</p>
+
+<div class="section-heading">Platform documents</div>
+<div class="cards">
+
+  <a class="card" href="/terms/">
+    <div class="label">Document</div>
+    <h2>Terms of Service</h2>
+    <p>The agreement between you and 141kg Ltd for using the Tenant app, Client app, and Landlord app.</p>
+    <div class="meta">v2026-05-26-b · 26 May 2026</div>
+  </a>
+
+  <a class="card" href="/privacy/">
+    <div class="label">Document</div>
+    <h2>Privacy Notice</h2>
+    <p>What 141kg collects, why, how long we keep it, and the rights you have under UK GDPR.</p>
+    <div class="meta">v2026-05-26-b · 26 May 2026</div>
+  </a>
+
+  <a class="card" href="/dpa/">
+    <div class="label">Document</div>
+    <h2>Data Processing Agreement</h2>
+    <p>The UK GDPR Article 28 agreement covering how 141kg processes client data on behalf of personal trainers.</p>
+    <div class="meta">v2026-05-26-c · 26 May 2026</div>
+  </a>
+
+</div>
+
+<div class="section-heading">For personal trainers</div>
+<div class="cards">
+
+  <a class="card" href="/pt-privacy/">
+    <div class="label">Template</div>
+    <h2>PT Client Privacy Notice</h2>
+    <p>A starting point for the privacy notice you give to your own clients. Available to read here or download as a Word document.</p>
+    <div class="meta">v2026-05-26-a · 26 May 2026</div>
+  </a>
+
+</div>
+
 </main>
 
 <footer class="site">
-  <div class="inner">
-    © 141kg.com
-  </div>
+  &copy; 141kg.com
+  <a href="https://legal.141kg.com/terms/">Terms</a>·
+  <a href="https://legal.141kg.com/privacy/">Privacy</a>·
+  <a href="https://legal.141kg.com/dpa/">DPA</a>·
+  <a href="https://legal.141kg.com/pt-privacy/">PT template</a>
 </footer>
 
 </body>
