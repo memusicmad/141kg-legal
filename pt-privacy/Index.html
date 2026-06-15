@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A privacy notice template that personal trainers using 141kg can adapt and provide to their clients.">
+<meta name="robots" content="index,follow">
+<title>PT Client Privacy Notice (template) · 141kg</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #111827;
+    --text-muted: #4b5563;
+    --text-faint: #6b7280;
+    --link: #1f2937;
+    --link-hover: #000000;
+    --border: #e5e7eb;
+    --border-strong: #d1d5db;
+    --code-bg: #f3f4f6;
+    --accent: #111827;
+    --notice-bg: #fef3c7;
+    --notice-border: #fbbf24;
+    --notice-text: #78350f;
+    --download-bg: #ecfdf5;
+    --download-border: #10b981;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  header.site {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  header.site .brand {
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--text);
+    letter-spacing: -0.01em;
+  }
+  header.site nav { display: flex; gap: 18px; }
+  header.site nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  header.site nav a:hover { color: var(--link-hover); }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 36px 24px 64px;
+  }
+  .crumb {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-faint);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+  }
+  .subtitle {
+    font-size: 17px;
+    color: var(--text-muted);
+    margin: 0 0 24px;
+  }
+  h2 {
+    font-size: 22px;
+    margin: 40px 0 14px;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 {
+    font-size: 17px;
+    margin: 24px 0 10px;
+    font-weight: 700;
+  }
+  p { margin: 0 0 14px; color: var(--text); }
+  ul, ol { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--link); text-decoration: underline; }
+  a:hover { color: var(--link-hover); }
+  strong { font-weight: 700; }
+  .meta {
+    background: var(--code-bg);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 0 0 28px;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .meta p { margin: 0; }
+  .meta strong { color: var(--text); }
+  .notice {
+    background: var(--notice-bg);
+    border-left: 4px solid var(--notice-border);
+    padding: 16px 20px;
+    margin: 0 0 28px;
+    border-radius: 4px;
+    font-size: 15px;
+    color: var(--notice-text);
+  }
+  .notice p { color: var(--notice-text); margin: 0 0 8px; }
+  .notice p:last-child { margin-bottom: 0; }
+  .notice strong { color: var(--notice-text); }
+  .download {
+    background: var(--download-bg);
+    border: 1px solid var(--download-border);
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin: 0 0 32px;
+  }
+  .download p { margin: 0 0 10px; font-size: 15px; }
+  .download p:last-child { margin-bottom: 0; }
+  .download a.btn {
+    display: inline-block;
+    background: var(--text);
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .download a.btn:hover { background: var(--link-hover); color: #fff; }
+  .placeholder {
+    background: #fef3c7;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-weight: 600;
+    color: #78350f;
+    font-size: 0.95em;
+  }
+  footer.site {
+    border-top: 1px solid var(--border);
+    padding: 24px;
+    text-align: center;
+    color: var(--text-faint);
+    font-size: 13px;
+  }
+  footer.site a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: 600;
+  }
+  footer.site a:hover { color: var(--link-hover); }
+  @media (max-width: 600px) {
+    h1 { font-size: 28px; }
+    h2 { font-size: 19px; }
+    header.site { padding: 14px 16px; }
+    main { padding: 24px 16px 48px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <a href="https://legal.141kg.com/" class="brand">141kg</a>
+  <nav>
+    <a href="https://legal.141kg.com/terms/">Terms</a>
+    <a href="https://legal.141kg.com/privacy/">Privacy</a>
+    <a href="https://legal.141kg.com/dpa/">DPA</a>
+    <a href="https://legal.141kg.com/pt-privacy/">PT template</a>
+  </nav>
+</header>
+
+<main>
+
+<div class="crumb">PT resource</div>
+
+<h1>PT Client Privacy Notice (template)</h1>
+<p class="subtitle">A starting point for the privacy notice you give to your clients.</p>
+
+<div class="meta">
+  <p><strong>Version:</strong> 2026-05-26-a</p>
+  <p><strong>Effective from:</strong> 26 May 2026</p>
+</div>
+
+<div class="notice">
+  <p><strong>Read this first.</strong> This is a template, not legal advice. As the controller of the personal data you collect about your clients, you are responsible for the privacy notice you actually give them. You should review and adapt this wording for your own practice, and you should consider taking advice from a UK solicitor or the Information Commissioner's Office (ICO) before relying on it.</p>
+  <p>Wording in <span class="placeholder">[square brackets]</span> needs to be filled in with your details before you publish or send the notice.</p>
+</div>
+
+<div class="download">
+  <p><strong>Download as a Word document.</strong> Easier to edit and rebrand for your own use.</p>
+  <p><a class="btn" href="141kg-pt-client-privacy-notice-template.docx">Download .docx</a></p>
+</div>
+
+<h2>How to use this template</h2>
+<ol>
+  <li>Download the Word version using the button above, or copy and adapt the wording below.</li>
+  <li>Fill in every <span class="placeholder">[bracketed]</span> placeholder with your details.</li>
+  <li>Review the lawful basis section and confirm it matches your actual practice. If you rely on a different basis (for example, legitimate interests rather than contract), update that section.</li>
+  <li>Decide how you will give the notice to clients. Common options: include it in your onboarding pack, publish it on your website, or email it before adding them to the platform.</li>
+  <li>Keep a dated copy of the version each client received. If you change the wording in a material way, give clients an updated version.</li>
+</ol>
+<p>This template assumes the standard 141kg setup: you use the platform as a personal trainer to record client training, and 141kg Ltd acts as your processor under the Data Processing Agreement at <a href="https://legal.141kg.com/dpa/">https://legal.141kg.com/dpa/</a>.</p>
+
+<h2>The template</h2>
+
+<h3>Who I am and what this notice is about</h3>
+<p>I am <span class="placeholder">[your name or trading name]</span>, a personal trainer based in <span class="placeholder">[your town or city]</span>. This notice explains what personal data I collect about you as my client, why I collect it, how long I keep it, and the rights you have under UK GDPR.</p>
+<p>I am the controller of the personal data I collect about you for personal training and coaching purposes. 141kg Ltd provides the software platform I use to record and manage your training data. They act as my processor for that data under a Data Processing Agreement.</p>
+<p>You can contact me about anything in this notice at <span class="placeholder">[your email]</span>, or by phone on <span class="placeholder">[your phone number, optional]</span>.</p>
+
+<h3>What I collect</h3>
+<p>I collect the following categories of personal data about you:</p>
+<ul>
+  <li><strong>Identification and contact data:</strong> your name, email address, and date of birth.</li>
+  <li><strong>Background data (optional):</strong> your sex, where you choose to provide it for benchmarking inside my training system.</li>
+  <li><strong>Training data:</strong> the workouts I plan for you, the sets, reps, weights, times, and exercises you complete, session dates and times, my notes about your sessions, and any goals we agree on.</li>
+  <li><strong>Health data:</strong> where you have given explicit consent, I may also record your body weight, heart rate during sessions, perceived effort (RPE) on a 0 to 10 scale, and an estimate of session calories. This category is treated as special category health data under UK GDPR Article 9.</li>
+</ul>
+
+<h3>What I do not collect on the 141kg platform</h3>
+<p>The 141kg platform is a training record. It is not a clinical record system. I do not record the following on it:</p>
+<ul>
+  <li>Injuries, conditions, medications, surgeries, allergies, or other medical history.</li>
+  <li>PAR-Q or health screening questionnaire responses.</li>
+  <li>Progress photos or body composition images.</li>
+  <li>Mental health information.</li>
+</ul>
+<p><span class="placeholder">[Optional, if applicable: If I need to record information about your health history for safety reasons, I keep it in <em>[describe your separate system, for example a paper consultation form locked in my office, or a separate encrypted document store]</em>, not on the 141kg platform.]</span></p>
+
+<h3>Why I collect this data and my lawful basis</h3>
+<p>I use your personal data to provide personal training and coaching services to you. That includes planning your training, recording what we do in each session, tracking your progress, communicating with you about your training, and managing the safety and effectiveness of your programme.</p>
+<p>My lawful basis for processing your data under UK GDPR Article 6 is <strong>performance of a contract</strong> with you (Article 6(1)(b)). I cannot deliver the training service we have agreed without recording your training data.</p>
+<p>Where I record health data (body weight, heart rate, RPE, session calories), my lawful basis under Article 9 is <strong>your explicit consent</strong> (Article 9(2)(a)). You give this consent in the Client app when you first set up your account on the 141kg platform. You can withdraw it at any time in the app or by contacting me; withdrawal does not affect any processing carried out before the withdrawal.</p>
+
+<h3>Who I share your data with</h3>
+<p>I share your data with the following:</p>
+<ul>
+  <li><strong>141kg Ltd</strong>, who provides the software platform I use to record your training. They are my processor. They process your data on my behalf, on documented instructions, under their Data Processing Agreement at <a href="https://legal.141kg.com/dpa/">https://legal.141kg.com/dpa/</a>. Their Privacy Notice is at <a href="https://legal.141kg.com/privacy/">https://legal.141kg.com/privacy/</a>.</li>
+  <li><span class="placeholder">[Add any other organisations you share data with, for example: a separate accounting system; a separate scheduling/booking system; a partner gym; an insurance provider. If you do not share data with anyone else, replace this line with: "I do not share your data with anyone else."]</span></li>
+</ul>
+<p>I do not sell your data and I do not share it for marketing without your separate consent.</p>
+
+<h3>How long I keep your data</h3>
+<p>I keep your training records while you remain my client. After you stop training with me, I keep your records for <span class="placeholder">[choose a period, for example "12 months", "the remainder of the current tax year plus 6 years", or "until you ask me to delete them"]</span>. I keep records I am required to keep by law (for example, accounting records) for the period that law requires, typically 6 years.</p>
+
+<h3>Your UK GDPR rights</h3>
+<p>You have the following rights over the data I hold about you:</p>
+<ul>
+  <li><strong>Access:</strong> ask me for a copy of the data I hold about you.</li>
+  <li><strong>Rectification:</strong> ask me to correct data that is inaccurate or incomplete.</li>
+  <li><strong>Erasure:</strong> ask me to delete your data, subject to any records I am required to keep by law.</li>
+  <li><strong>Restriction:</strong> ask me to stop processing your data while we sort out a complaint or correction.</li>
+  <li><strong>Portability:</strong> ask me for your data in a machine-readable format. The 141kg platform provides an export tool I can use to give you this.</li>
+  <li><strong>Object:</strong> object to processing I carry out on the basis of legitimate interests, where applicable.</li>
+  <li><strong>Withdraw consent:</strong> where I rely on your consent (for health data), withdraw it at any time.</li>
+  <li><strong>Complain:</strong> if you are not happy with how I handle your data, you can complain to the UK Information Commissioner's Office at <a href="https://ico.org.uk">ico.org.uk</a>. I would prefer you contact me first so I can put things right.</li>
+</ul>
+<p>To exercise any of these rights, contact me at <span class="placeholder">[your email]</span>.</p>
+
+<h3>Changes to this notice</h3>
+<p>If I make a material change to this notice, I will give you the updated version and the date it takes effect.</p>
+
+<h3>Contact</h3>
+<p>For anything about this notice, contact me at <span class="placeholder">[your email]</span>.</p>
+<p style="margin-top: 32px; font-size: 13px; color: var(--text-faint);">This notice is based on the 141kg PT Client Privacy Notice template version 2026-05-26-a. The template is a starting point and not legal advice.</p>
+
+</main>
+
+<footer class="site">
+  &copy; 141kg.com
+  <a href="https://legal.141kg.com/terms/">Terms</a>·
+  <a href="https://legal.141kg.com/privacy/">Privacy</a>·
+  <a href="https://legal.141kg.com/dpa/">DPA</a>·
+  <a href="https://legal.141kg.com/pt-privacy/">PT template</a>
+</footer>
+
+</body>
+</html>
