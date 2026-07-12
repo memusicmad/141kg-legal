@@ -176,21 +176,21 @@
     <div class="label">Document</div>
     <h2>Terms of Service</h2>
     <p>The agreement between you and 141kg Ltd for using the Tenant app, Client app, and Landlord app.</p>
-    <div class="meta">v2026-06-15-a · 15 June 2026</div>
+    <div class="meta" data-doc="/terms/" hidden></div>
   </a>
 
   <a class="card" href="/privacy/">
     <div class="label">Document</div>
     <h2>Privacy Notice</h2>
     <p>What 141kg collects, why, how long we keep it, and the rights you have under UK GDPR.</p>
-    <div class="meta">v2026-06-15-a · 15 June 2026</div>
+    <div class="meta" data-doc="/privacy/" hidden></div>
   </a>
 
   <a class="card" href="/dpa/">
     <div class="label">Document</div>
     <h2>Data Processing Agreement</h2>
     <p>The UK GDPR Article 28 agreement covering how 141kg processes client data on behalf of personal trainers.</p>
-    <div class="meta">v2026-06-15-a · 15 June 2026</div>
+    <div class="meta" data-doc="/dpa/" hidden></div>
   </a>
 
 </div>
@@ -202,7 +202,7 @@
     <div class="label">Template</div>
     <h2>PT Client Privacy Notice</h2>
     <p>A starting point for the privacy notice you give to your own clients. Available to read here or download as a Word document.</p>
-    <div class="meta">v2026-06-15-a · 15 June 2026</div>
+    <div class="meta" data-doc="/pt-privacy/" hidden></div>
   </a>
 
 </div>
@@ -217,5 +217,33 @@
   <a href="https://legal.141kg.com/pt-privacy/">PT template</a>
 </footer>
 
+<script>
+// Each version chip reads its own document page and renders whatever version is
+// actually published there. Same origin, so no CORS. The chip starts hidden and
+// stays hidden if anything fails: a missing version beats a wrong one.
+(function () {
+  var VERSION = /Version:\s*(\d{4}-\d{2}-\d{2}-[a-z])/i;
+  var EFFECTIVE = /Effective(?:\s+from)?:\s*([0-9]{1,2}\s+\w+\s+\d{4})/i;
+
+  Array.prototype.forEach.call(document.querySelectorAll('.meta[data-doc]'), function (el) {
+    fetch(el.getAttribute('data-doc'), { cache: 'no-cache' })
+      .then(function (r) {
+        if (!r.ok) throw new Error(r.status);
+        return r.text();
+      })
+      .then(function (html) {
+        var doc = new DOMParser().parseFromString(html, 'text/html');
+        var meta = doc.querySelector('.meta');
+        var text = (meta ? meta.textContent : doc.body.textContent).replace(/\s+/g, ' ');
+        var v = text.match(VERSION);
+        if (!v) throw new Error('no version');
+        var d = text.match(EFFECTIVE);
+        el.textContent = 'v' + v[1] + (d ? ' \u00B7 ' + d[1] : '');
+        el.hidden = false;
+      })
+      .catch(function () { el.hidden = true; });
+  });
+})();
+</script>
 </body>
 </html>
