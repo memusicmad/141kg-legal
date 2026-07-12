@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Unsubscribed · 141kg</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #111827;
+    --text-muted: #4b5563;
+    --text-faint: #6b7280;
+    --border: #e5e7eb;
+    --card-bg: #f9fafb;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  header.site {
+    border-bottom: 1px solid var(--border);
+    padding: 18px 24px;
+  }
+  header.site .brand {
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--text);
+    letter-spacing: -0.01em;
+  }
+  main { max-width: 560px; margin: 0 auto; padding: 56px 24px 72px; }
+  .crumb {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-faint);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  h1 { font-size: 32px; line-height: 1.2; margin: 0 0 16px; letter-spacing: -0.02em; font-weight: 800; }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 22px 24px;
+    margin-top: 24px;
+  }
+  p { margin: 0 0 12px; font-size: 16px; color: var(--text-muted); }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--text); font-weight: 600; }
+  footer.site {
+    border-top: 1px solid var(--border);
+    padding: 24px;
+    text-align: center;
+    color: var(--text-faint);
+    font-size: 13px;
+  }
+  footer.site a { color: var(--text-muted); text-decoration: none; margin: 0 8px; font-weight: 600; }
+  @media (max-width: 600px) {
+    h1 { font-size: 26px; }
+    main { padding: 32px 16px 48px; }
+  }
+</style>
+</head>
+<body>
 
+<header class="site">
+  <a href="https://legal.141kg.com/" class="brand">141kg</a>
+</header>
+
+<main>
+  <div class="crumb">Email preferences</div>
+  <h1 id="title">Unsubscribed</h1>
+  <div class="card" id="body">
+    <p>Done. You will not receive these emails again, from any trainer on 141kg.</p>
+  </div>
+</main>
+
+<footer class="site">
+  &copy; 141kg.com
+  <a href="https://legal.141kg.com/privacy/">Privacy</a>·
+  <a href="https://legal.141kg.com/terms/">Terms</a>
+</footer>
+
+<script>
+// The unsubscribe function does the work, then sends the person here with a
+// status. No token in this URL: the confirmation cannot be shared or replayed,
+// and there is nothing here to identify anyone.
+(function () {
+  var STATES = {
+    ok: {
+      title: "Unsubscribed",
+      body: [
+        "Done. You will not receive these emails again, from any trainer on 141kg.",
+        "Your trainer cannot undo this. Nothing else about your account changes: your training data, your app, and your login all work exactly as before.",
+        'Changed your mind? Email <a href="mailto:admin@141kg.com">admin@141kg.com</a>.'
+      ]
+    },
+    already: {
+      title: "Already unsubscribed",
+      body: [
+        "You were already off the list. Nothing more to do.",
+        "You will not receive these emails from any trainer on 141kg.",
+        'Changed your mind? Email <a href="mailto:admin@141kg.com">admin@141kg.com</a>.'
+      ]
+    },
+    bad: {
+      title: "Link not recognised",
+      body: [
+        "That unsubscribe link is not valid. It may have been cut short by your email app.",
+        'Email <a href="mailto:admin@141kg.com">admin@141kg.com</a> and we will take you off the list.'
+      ]
+    },
+    error: {
+      title: "Something went wrong",
+      body: [
+        "We could not record that just now.",
+        'Email <a href="mailto:admin@141kg.com">admin@141kg.com</a> and we will do it for you.'
+      ]
+    }
+  };
+
+  var s = new URLSearchParams(window.location.search).get("s") || "ok";
+  var state = STATES[s] || STATES.ok;
+
+  document.getElementById("title").textContent = state.title;
+  document.title = state.title + " \u00b7 141kg";
+  document.getElementById("body").innerHTML =
+    state.body.map(function (p) { return "<p>" + p + "</p>"; }).join("");
+})();
+</script>
+
+</body>
+</html>
