@@ -168,8 +168,8 @@
 <h1>Data Processing Agreement</h1>
 
 <div class="meta">
-  <p><strong>Version:</strong> 2026-06-24-a</p>
-  <p><strong>Effective from:</strong> 24 June 2026</p>
+  <p><strong>Version:</strong> 2026-07-12-a</p>
+  <p><strong>Effective from:</strong> 12 July 2026</p>
 </div>
 
 <h2>1. About this agreement</h2>
@@ -194,8 +194,8 @@
 <h2>4. Subject matter, duration, nature and purpose of processing</h2>
 <p><strong>Subject matter:</strong> processing of personal data about the PT's clients for the purpose of training planning, recording, and analysis.</p>
 <p><strong>Duration:</strong> for the life of the PT's account, plus the 30-day transition period after closure, plus any further period required by the retention schedule in our Privacy Notice.</p>
-<p><strong>Nature of processing:</strong> collection, storage, structuring, retrieval, use, transmission, restriction, deletion, and backup. Processing is automated, carried out using the Tenant app and the Client app, and our supporting infrastructure.</p>
-<p><strong>Purpose of processing:</strong> to provide the 141kg platform to the PT, enabling the PT to plan, record, and analyse the training of their clients, and to provide the clients with access to their own records.</p>
+<p><strong>Nature of processing:</strong> collection, storage, structuring, retrieval, use, transmission, restriction, deletion, backup, and sending engagement email to your clients on your instruction. Processing is automated, carried out using the Tenant app and the Client app, and our supporting infrastructure.</p>
+<p><strong>Purpose of processing:</strong> to provide the 141kg platform to the PT, enabling the PT to plan, record, and analyse the training of their clients, to show the PT when each of their clients last opened the Client app, to send an engagement email to a client when the PT instructs it, and to provide the clients with access to their own records.</p>
 
 <h2>5. Categories of data subjects and personal data</h2>
 <p><strong>Data subjects:</strong> the PT's clients, who are aged 16 or over.</p>
@@ -204,6 +204,7 @@
   <li>Identification and contact data: name, email address, date of birth, sex (where provided).</li>
   <li>Authentication data: password hash (held by Supabase), login activity.</li>
   <li>Training data: workouts, exercises, sets, reps, weights, times, body areas, session dates and times, session notes, goals, leaderboard opt-in and display name, training history.</li>
+  <li>Engagement data: the date the client last opened the Client app, whether the client has opted out of engagement email, and the record of engagement emails sent to them.</li>
 </ul>
 <p><strong>Special category data (UK GDPR Article 9):</strong></p>
 <ul>
@@ -234,6 +235,7 @@
   <li>You have made our Privacy Notice available to each client.</li>
   <li>You have your own privacy notice that tells your clients about your processing, including the categories of data, the lawful basis, your contact details, and the clients' rights. We provide a template you can adapt at <a href="https://legal.141kg.com/pt-privacy/">https://legal.141kg.com/pt-privacy/</a>. The template is a starting point, not legal advice; you are responsible for the content of the notice you actually give to your clients.</li>
   <li>You will not enter health information about a client into the platform's free-text fields (session notes, goal descriptions, or any other free-text input). This includes injuries, conditions, medications, medical history, mental health information, or anything that would constitute special category data under UK GDPR Article 9. The platform is not a clinical record system. If you need to record such information for your own practice, keep it in a separate system that is appropriate for clinical data.</li>
+  <li>If you instruct us to send an engagement email to a client, you are the sender for the purposes of the Privacy and Electronic Communications Regulations 2003. You warrant that you have a lawful basis to email that client about your services, either their consent or the soft opt-in in regulation 22(3), and that they have not asked you to stop. We provide the mechanism and enforce the unsubscribe. We do not decide who receives an engagement email.</li>
   <li>You will respond to data subject rights requests from your clients in line with UK GDPR (see section 9 below). We will help with the technical side, but the legal response is yours.</li>
   <li>You will tell us promptly if you become aware that a client has withdrawn consent, has asked for their data to be deleted, has died, or has made any other request that affects how we should be processing their data.</li>
 </ul>
@@ -245,6 +247,7 @@
   <li>Ensure that the people we authorise to access client data are bound by confidentiality obligations.</li>
   <li>Implement appropriate technical and organisational security measures (see section 8).</li>
   <li>Only engage sub-processors in line with section 10.</li>
+  <li>Send an engagement email to a client only when you instruct it. We will never send one on our own initiative, and never for any purpose of our own. Every engagement email carries an unsubscribe link. A client who unsubscribes is opted out across the whole platform, and no PT can clear that opt-out. We will not send an engagement email to a client you have not invited, and we limit sends to one per client in any 14-day period. The message body carries no client personal data and no client training data.</li>
   <li>Help you respond to data subject rights requests (see section 9).</li>
   <li>Help you comply with your obligations under UK GDPR Articles 32 to 36 (security, breach notification, data protection impact assessments, prior consultation), taking into account the nature of the processing and the information available to us.</li>
   <li>At your choice, delete or return all client data at the end of the processing relationship, except where UK or other law requires us to keep it. Our default is deletion in line with the retention schedule in our Privacy Notice.</li>
@@ -309,7 +312,7 @@
     </tr>
     <tr>
       <td>Resend</td>
-      <td>Transactional email (invites, password resets, account notifications)</td>
+      <td>Transactional email (invites, password resets, account notifications, engagement email sent on a PT instruction)</td>
       <td>United States</td>
       <td>UK IDTA / EU SCCs with UK Addendum</td>
     </tr>
