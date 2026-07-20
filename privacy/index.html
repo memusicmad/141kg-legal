@@ -168,8 +168,8 @@
 <h1>Privacy Notice</h1>
 
 <div class="meta">
-  <p><strong>Version:</strong> 2026-07-12-c</p>
-  <p><strong>Effective from:</strong> 12 July 2026</p>
+  <p><strong>Version:</strong> 2026-07-20-a</p>
+  <p><strong>Effective from:</strong> 20 July 2026</p>
 </div>
 
 <h2>1. About this notice</h2>
@@ -253,8 +253,8 @@
 <h3>App usage analytics (controller: 141kg)</h3>
 <ul>
   <li><strong>What:</strong> When you open the app, which screens you open, and that you used certain in-app actions: logging a set, a body weight, an RPE, or a session heart rate or calorie figure. These are recorded as events linked to your account. The action events record that the action happened and when, not the value behind it. The values you enter, including the health-related ones, are held as training and special category data as described above and in section 5, not copied into these analytics events.</li>
-  <li><strong>Why:</strong> To understand how the app is used: which features and screens are popular, how often and at what times of day people return, and which logging actions are used, so we can keep the service running and improve it. We analyse this only in aggregate, across users, and we apply a small-number floor: any screen or health-related action used by fewer than three people on a given day is dropped from the aggregates, so nothing we look at or send ourselves can single you out. We do not use it to make decisions about you or to build a profile of you. Your PT never sees these events. The date you last used the app, which your PT can see, comes from your login record and not from these events. See App engagement shared with your trainer, below.</li>
-  <li><strong>Lawful basis:</strong> Legitimate interests (Article 6(1)(f)). The interest is operating and improving the service. Our balancing test concludes the impact on you is low: we count only that an action happened, not the value behind it; we report aggregate totals with the small-number floor described above; we surface no individual history, to ourselves or to your PT; the data is never used for advertising or profiling; and it is deleted after 6 months. The health values themselves stay under the explicit consent described in section 5. If you withdraw that consent you stop logging those metrics, so there is no further action of that kind to count.</li>
+  <li><strong>Why:</strong> To understand how the app is used: which features and screens are popular, how often and at what times of day people return, and which logging actions are used, so we can keep the service running and improve it. We analyse this only in aggregate, across users, and we apply a small-number floor: any screen or health-related action used by fewer than three people on a given day is dropped from the aggregates, so nothing we look at or send ourselves from these analytics can single you out. We do not use it to make decisions about you or to build a profile of you. Your PT never sees these events. The date you last used the app, which your PT can see, comes from your login record and not from these events. See App engagement shared with your trainer, below.</li>
+  <li><strong>Lawful basis:</strong> Legitimate interests (Article 6(1)(f)). The interest is operating and improving the service. Our balancing test concludes the impact on you is low: we count only that an action happened, not the value behind it; we report aggregate totals with the small-number floor described above; we surface no individual history from these analytics, to ourselves or to your PT; the data is never used for advertising or profiling; and it is deleted after 6 months. The health values themselves stay under the explicit consent described in section 5. If you withdraw that consent you stop logging those metrics, so there is no further action of that kind to count.</li>
 </ul>
 
 <h3>App engagement shared with your trainer (controller: your PT)</h3>
@@ -445,7 +445,7 @@
 <p>If you train with a PT, your PT can ask us to send you an email about the app on their behalf. Your PT chooses who to email; we send none on our own initiative. Every such email carries an unsubscribe link that stops all of them, from any trainer. Section 4 sets this out under App engagement shared with your trainer.</p>
 <p>Separately from cookies, we collect first-party usage analytics about how the app is used (which screens are opened, when the app is opened, and that certain in-app actions were used), as described in section 4. This is recorded on our own systems as events linked to your account. It does not use third-party tracking scripts, advertising cookies, or cross-site tracking.</p>
 
-<p><strong>If you are a client:</strong> we analyse this only in aggregate, with a small-number floor that drops anything used by fewer than three people on a given day. Nothing we look at or send ourselves can single you out, and your PT never sees these events at all. Separately, your PT can see the date you last used the app. That comes from your login record, not from these analytics events. Section 4 sets it out, including how to opt out of the emails your PT can send about it.</p>
+<p><strong>If you are a client:</strong> we analyse this only in aggregate, with a small-number floor that drops anything used by fewer than three people on a given day. Nothing we look at or send ourselves from these analytics can single you out, and your PT never sees these events at all. Separately, your PT can see the date you last used the app. That comes from your login record, not from these analytics events. Section 4 sets it out, including how to opt out of the emails your PT can send about it.</p>
 
 <p><strong>If you are a personal trainer:</strong> we record when you open the Tenant app and which screens you open, and our internal reporting on that identifies you. It is not aggregate only. Section 4 sets this out in full, including your right to object.</p>
 <p>Our sub-processors (Vercel and Supabase) log technical request data (IP address, request path, timestamp) for security and service operation. This is strictly necessary and is covered by the legitimate interests basis in section 4.</p>
@@ -459,7 +459,7 @@
   <li>PT accounts are protected by mandatory multi-factor authentication using a TOTP authenticator app.</li>
   <li>Client accounts use password-only authentication, which is standard for consumer fitness apps. We may add MFA for clients in future, but we have not committed to a timeline.</li>
   <li>Database access controls (row level security) ensure that one PT cannot see another PT's data, and one client cannot see another client's data.</li>
-  <li>We use the principle of least privilege for our own access to client data: we access it only where necessary to operate the platform or to respond to a support request from the PT or client.</li>
+  <li>We use the principle of least privilege for our own access to client data: we access it only where necessary to operate the platform or to respond to a support request from the PT or client. That access runs through an administration app restricted to our own accounts and protected by mandatory multi-factor authentication, enforced at the database rather than in the interface. It shows identification and contact details, the assigned trainer, tier, activity dates and set counts. It does not show, and does not query, any special category data: body weight, heart rate, RPE and session calories are not visible to us there. Platform-level figures in that app resolve to per-trainer counts and not to individual records. We do not browse records, and we do not use them for any purpose of our own.</li>
 </ul>
 <p>If there is a personal data breach that is likely to result in a risk to your rights and freedoms, we will notify the ICO within 72 hours of becoming aware of it, and we will notify you without undue delay where the risk to you is high. This is required by UK GDPR Articles 33 and 34.</p>
 
