@@ -168,8 +168,8 @@
 <h1>Data Processing Agreement</h1>
 
 <div class="meta">
-  <p><strong>Version:</strong> 2026-09-29-a</p>
-  <p><strong>Effective from:</strong> 29 September 2026</p>
+  <p><strong>Version:</strong> 2026-10-28-a</p>
+  <p><strong>Effective from:</strong> 28 October 2026. The addition of Apple as a sub-processor (section 10) takes effect on 11 November 2026, 14 days after this notice.</p>
 </div>
 
 <h2>1. About this agreement</h2>
@@ -194,7 +194,7 @@
 <h2>4. Subject matter, duration, nature and purpose of processing</h2>
 <p><strong>Subject matter:</strong> processing of personal data about the PT's clients for the purpose of training planning, recording, and analysis.</p>
 <p><strong>Duration:</strong> for the life of the PT's account, plus the 30-day transition period after closure, plus any further period required by the retention schedule in our Privacy Notice.</p>
-<p><strong>Nature of processing:</strong> collection, storage, structuring, retrieval, use, transmission, restriction, deletion, backup, sending engagement email to your clients on your instruction, and access by our authorised personnel to individual client records where that is necessary to operate the platform. Processing is automated, carried out using the Tenant app and the Client app, and our supporting infrastructure.</p>
+<p><strong>Nature of processing:</strong> collection, storage, structuring, retrieval, use, transmission, restriction, deletion, backup, sending engagement email to your clients on your instruction, importing a client's own Apple Health data into that client's account where the client turns it on, delivering push notifications to a client's iPhone, and access by our authorised personnel to individual client records where that is necessary to operate the platform. Processing is automated, carried out using the Tenant app and the Client app, and our supporting infrastructure.</p>
 <p><strong>Purpose of processing:</strong> to provide the 141kg platform to the PT, enabling the PT to plan, record, and analyse the training of their clients, to show the PT when each of their clients last opened the Client app, to send an engagement email to a client when the PT instructs it, to provide the clients with access to their own records, and to administer and support the platform, which includes our authorised personnel opening an individual client record where that is necessary for support, security, billing, onboarding, or an erasure request.</p>
 
 <h2>5. Categories of data subjects and personal data</h2>
@@ -209,9 +209,10 @@
 <p><strong>Special category data (UK GDPR Article 9):</strong></p>
 <ul>
   <li>Body weight measurements.</li>
-  <li>Heart rate (per session, optional).</li>
+  <li>Heart rate (per session, optional, entered by the client or imported from Apple Health), and resting heart rate imported from Apple Health.</li>
   <li>Rate of perceived exertion (RPE) on a 0 to 10 scale (per session, optional).</li>
-  <li>Session calories (per session, optional, user-entered estimate).</li>
+  <li>Session calories (per session, optional, entered by the client as an estimate or imported from Apple Health).</li>
+  <li>Daily step count and Apple Health workout details (type, duration, distance, active energy, elevation), imported by a client from Apple Health in the Client app for iPhone.</li>
 </ul>
 <p><strong>Categories of data the platform does not process on the PT's behalf:</strong></p>
 <ul>
@@ -219,7 +220,7 @@
   <li>Injury, illness, medication, medical history, or any clinical record.</li>
   <li>PAR-Q or health screening questionnaire responses.</li>
   <li>Wellbeing or readiness fields entered by the user (sleep, soreness, stress, mood).</li>
-  <li>Wearable device data.</li>
+  <li>Wearable device data, other than the Apple Health items a client chooses to import in the Client app for iPhone, listed above. Nothing else is read from Apple Health, and nothing is written to it.</li>
   <li>Nutrition or food intake data.</li>
 </ul>
 <p>The free-text fields on the platform (session notes, goal descriptions) are not designed to hold any of the categories listed above. The PT warrants in section 6 that they will not enter such information in those fields.</p>
@@ -249,6 +250,8 @@
   <li>Implement appropriate technical and organisational security measures (see section 8).</li>
   <li>Only engage sub-processors in line with section 10.</li>
   <li>Send an engagement email to a client only when you instruct it. We will never send one on our own initiative, and never for any purpose of our own. Every engagement email carries an unsubscribe link. A client who unsubscribes is opted out across the whole platform, and no PT can clear that opt-out. We will not send an engagement email to a client you have not invited, and we limit sends to one per client in any 14-day period. The message body carries no client personal data and no client training data.</li>
+  <li>Import Apple Health data into a client's account only when that client has turned it on in the Client app for iPhone and given a separate explicit Apple Health consent. Copy heart rate and calorie values from Apple Health onto a session only where the client also holds the heart rate or session calories consent. You cannot read a client's Apple Health steps, resting heart rate or full Apple workout record in the Tenant app. You do see a cardio workout imported as a set, and any heart rate or calories copied onto a session, as you see any other data your client logs.</li>
+  <li>Send a client's push notification through the Apple Push Notification service only to a device the client has registered, with a title and short message that carry no heart rate, calorie, body weight or other health value.</li>
   <li>Help you respond to data subject rights requests (see section 9).</li>
   <li>Help you comply with your obligations under UK GDPR Articles 32 to 36 (security, breach notification, data protection impact assessments, prior consultation), taking into account the nature of the processing and the information available to us.</li>
   <li>At your choice, delete or return all client data at the end of the processing relationship, except where UK or other law requires us to keep it. Our default is deletion in line with the retention schedule in our Privacy Notice.</li>
@@ -316,6 +319,12 @@
       <td>Transactional email (invites, password resets, account notifications, engagement email sent on a PT instruction)</td>
       <td>United States</td>
       <td>UK IDTA / EU SCCs with UK Addendum</td>
+    </tr>
+    <tr>
+      <td>Apple (from 11 November 2026)</td>
+      <td>Push notification delivery to the Client app for iPhone (Apple Push Notification service). Apple receives the device push token and the notification title and short message.</td>
+      <td>United States</td>
+      <td>Apple Developer Program terms. We send no health value in a notification. We are confirming the contractual transfer safeguard with Apple and will update this section when it is recorded.</td>
     </tr>
   </tbody>
 </table>

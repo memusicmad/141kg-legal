@@ -168,8 +168,8 @@
 <h1>Privacy Notice</h1>
 
 <div class="meta">
-  <p><strong>Version:</strong> 2026-07-20-a</p>
-  <p><strong>Effective from:</strong> 20 July 2026</p>
+  <p><strong>Version:</strong> 2026-10-28-b</p>
+  <p><strong>Effective from:</strong> 28 October 2026</p>
 </div>
 
 <h2>1. About this notice</h2>
@@ -178,6 +178,7 @@
 <ul>
   <li>Personal trainers (PTs) using the Tenant app at pt.141kg.com.</li>
   <li>Clients using the Client app at client.141kg.com.</li>
+  <li>Clients using the 141kg Client app for iPhone.</li>
   <li>Visitors to our legal site at legal.141kg.com.</li>
 </ul>
 <p>If you are a client, please also read the section below on the two relationships, which explains the difference between the data we control and the data your PT controls.</p>
@@ -208,6 +209,7 @@
   <li><strong>What:</strong> Login timestamps, IP addresses, user agent strings, multi-factor authentication factors (for PTs), failed login attempts, password reset events.</li>
   <li><strong>Why:</strong> To authenticate you, prevent unauthorised access, detect abuse, and meet our security obligations under UK GDPR Article 32.</li>
   <li><strong>Lawful basis:</strong> Legitimate interests (Article 6(1)(f)). The interest is keeping accounts secure. Our balancing test concludes that this is a low-impact, expected use of the data that any reasonable user would assume is happening.</li>
+  <li><strong>Consent records:</strong> When you record a consent choice, we keep the choice with a timestamp and, where the request carries it, the IP address, as evidence. Our server reads that IP address from your request. We send it to no third-party lookup service.</li>
   <li><strong>One thing your PT can see:</strong> the date you last used the app, taken from this login record. Nothing else from it reaches them: not your IP address, not your device, not the times of day you log in. See App engagement shared with your trainer, below.</li>
 </ul>
 
@@ -237,11 +239,27 @@
 
 <h3>Special category data (controller: your PT where you train with one; 141kg where you use the Client app without a PT)</h3>
 <ul>
-  <li><strong>What:</strong> Body weight, heart rate, rate of perceived exertion (RPE), and session calories.</li>
+  <li><strong>What:</strong> Body weight, heart rate, rate of perceived exertion (RPE), and session calories. If you turn on Apple Health in the iPhone app, also resting heart rate, daily step count, and Apple Health workout details.</li>
   <li><strong>Why:</strong> To record health-relevant training data and surface observations from it.</li>
   <li><strong>Lawful basis:</strong> Explicit consent under UK GDPR Article 9(2)(a). You will be asked for this consent separately, before the data is recorded for the first time. You can withdraw your consent at any time in the app settings or by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>. Withdrawing consent does not affect processing carried out before withdrawal.</li>
 </ul>
 <p>If you are a PT entering this category of data about a client, the Tenant app provides a consent capture screen for the client to give explicit consent. You must use this before entering special category data about any client.</p>
+
+<h3>Apple Health data, iPhone app only (controller: 141kg for the records only you can see; your PT, or 141kg where you have no PT, for what joins your training history)</h3>
+<ul>
+  <li><strong>What:</strong> If you turn on Apple Health in the iPhone app and give iOS permission, the app reads these items from Apple Health on your phone: workouts (type, start and end time, duration, distance, active energy in kilocalories, average heart rate, elevation gain, and the name of the app or device that recorded the workout), body weight, daily step count, and resting heart rate. The app reads from Apple Health and never writes to it. It checks for new data when you open the app. On first use, or when you tap Import, it reads the last 30 days. It reads nothing else from Apple Health. We keep a copy of what the app reads in your account. The original stays in Apple Health under your control.</li>
+  <li><strong>Why:</strong> To add the walks, runs, rides and other cardio workouts you record on your Apple Watch or iPhone to your training history, to attach heart rate and calories to a matching strength session, and to show your steps and resting heart rate.</li>
+  <li><strong>Lawful basis:</strong> Explicit consent under UK GDPR Article 9(2)(a). The app asks for a separate Apple Health consent before it imports anything. Heart rate and calorie values reach a session record only if you have also given the heart rate and session calories consents described in section 5. You can withdraw consent in the app settings or by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>. You can also stop the app reading Apple Health at any time under Settings, Health, Data Access in iOS. Withdrawing does not affect data already imported.</li>
+  <li><strong>Who sees it:</strong> Your daily steps, your resting heart rate and the full Apple workout record are visible only to you. Your PT cannot see them. A cardio workout such as a walk becomes a set in your training history, and heart rate and calories can be copied onto a session. Your PT sees those as they see anything else you log, and your PT is the controller of them, as with the training data described above.</li>
+</ul>
+
+<h3>Push notifications, iPhone app only (controller: 141kg)</h3>
+<ul>
+  <li><strong>What:</strong> A push token that identifies your phone to Apple's notification service, with the app identifier, whether the build is for testing or production, and when the token was registered and last used. We also send the notification itself: a title and short text, such as a note that your PT logged a session for you, a link into the app, and the number shown on the app icon badge (your count of unread notifications). The title can contain your PT's name.</li>
+  <li><strong>Why:</strong> To deliver the notifications you see in the app's notification bell to your phone: a session logged by your PT, a reminder about an unfinished session, and your digest of recent activity.</li>
+  <li><strong>Lawful basis:</strong> Legitimate interests (Article 6(1)(f)). The interest is keeping you informed of activity on your own account. Our balancing test concludes the impact on you is low: iOS asks your permission before the app can send notifications, you can switch them off at any time in iOS Settings or on the Notifications card on the Me tab, and we use push for no other purpose.</li>
+  <li><strong>Apple:</strong> Apple Push Notification service delivers each message. Apple receives your push token and the notification content. Sections 8 and 15 list Apple for this reason.</li>
+</ul>
 
 <h3>Technical and device data (controller: 141kg)</h3>
 <ul>
@@ -279,9 +297,10 @@
 <p>Some of the data the platform records is treated as a "special category" of personal data under UK GDPR Article 9. This category has tighter rules because it can reveal information about your health. On this platform, the special categories are:</p>
 <ul>
   <li>Body weight measurements.</li>
-  <li>Heart rate (per session, optional).</li>
+  <li>Heart rate (per session, optional, entered by you or imported from Apple Health), and resting heart rate imported from Apple Health.</li>
   <li>Rate of perceived exertion (RPE) on a 0 to 10 scale (per session, optional).</li>
-  <li>Session calories (per session, optional, user-entered estimate).</li>
+  <li>Session calories (per session, optional, entered by you as an estimate or imported from Apple Health).</li>
+  <li>Daily step count and Apple Health workout details (type, duration, distance, active energy, elevation), imported from Apple Health if you turn that on in the iPhone app.</li>
 </ul>
 <p>For this category we rely on your <strong>explicit consent</strong> under Article 9(2)(a). This is a stricter standard than ordinary consent: it must be specific, informed, and given by a clear affirmative action.</p>
 <p>Because this is special category data, the app asks for your consent in two parts on the consent capture screen:</p>
@@ -290,6 +309,7 @@
   <li><strong>Acknowledgement:</strong> a separate tick-box confirming you understand this data is treated as special category health data under UK GDPR Article 9, and that you can withdraw consent at any time.</li>
 </ul>
 <p>Both tick-boxes must be ticked for consent to be valid. Without both, the platform will not record this data about you.</p>
+<p>The iPhone app asks for a separate Apple Health consent, with its own tick-boxes, before it imports anything from Apple Health. That consent covers the items listed in section 4. Heart rate and calorie values from Apple Health are copied onto a session only if you have also given the heart rate and session calories consents above.</p>
 <p>You can withdraw consent at any time in the app settings or by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>. When you do, we stop the relevant processing immediately. Data already recorded remains in your history unless you also ask for it to be deleted (which is a separate right, covered in section 11).</p>
 <p><strong>About the Recovery feature.</strong> The Recovery indicator shown in the app is computed from your training data (volume per body area and time elapsed since you last trained that area). It is not a separate data point you or your PT enter, and we do not record sleep, soreness, mood, or stress ratings. Because Recovery is derived from training data, it does not require separate special category consent: its lawful basis is the same as the underlying training data it is computed from. If we ever add user-entered recovery or wellbeing fields (such as a sleep tracker or soreness slider), we will update this section and ask for fresh consent before recording that data.</p>
 
@@ -300,7 +320,7 @@
   <li><strong>PAR-Q or health screening questionnaires.</strong> The platform does not capture pre-activity readiness questionnaires or medical clearance forms. If a PT uses one, it must be kept outside the platform.</li>
   <li><strong>Progress photos, body composition images, or transformation images.</strong> The platform does not have a photo upload feature for clients or PTs to attach to a client record. Profile imagery is rendered from the user's initials only.</li>
   <li><strong>Wellbeing or readiness fields entered by the user.</strong> We do not capture sleep, soreness, stress, mood, or similar ratings. The Recovery indicator in the Client app is computed from training data alone; it is not a separate data point you enter.</li>
-  <li><strong>Wearable device data.</strong> We do not integrate with Apple Health, Fitbit, Garmin, Whoop, or any other wearable platform.</li>
+  <li><strong>Other wearable device data.</strong> The iPhone app imports the Apple Health items listed in section 4 if you turn that on. We read nothing else from Apple Health, such as sleep, menstrual cycle, nutrition or ECG data. We do not integrate with Fitbit, Garmin, Whoop, or any other wearable platform.</li>
   <li><strong>Nutrition or food intake data.</strong> The platform does not have nutrition tracking.</li>
   <li><strong>Marketing or advertising data.</strong> We do not track you across sites, build advertising profiles, or share data with advertisers.</li>
 </ul>
@@ -323,6 +343,7 @@
   <li><strong>Fastmail</strong> hosts our corporate email (admin@141kg.com and similar). Fastmail is headquartered in Australia.</li>
   <li><strong>Resend</strong> sends our transactional email (invites, password resets, account notifications), and delivers the engagement email a PT asks us to send to their own clients. Resend is headquartered in the United States.</li>
   <li><strong>Stripe</strong> processes payments and subscription billing (PT and client plans). Stripe is headquartered in the United States. Card numbers and payment-method details are held by Stripe; we do not store card numbers.</li>
+  <li><strong>Apple</strong> delivers push notifications to the iPhone app through the Apple Push Notification service. Apple is headquartered in the United States. Apple receives your push token and the notification content.</li>
 </ul>
 <p>Where data is transferred outside the UK to a country not covered by an adequacy decision, we rely on the <strong>UK International Data Transfer Agreement (UK IDTA)</strong> or the <strong>EU Standard Contractual Clauses with the UK Addendum</strong>, in line with UK GDPR Articles 44 to 49. These are the safeguards required to transfer personal data outside the UK. You can request a copy of the safeguards in place for any specific transfer by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>. This is your right under UK GDPR Article 13(2)(e).</p>
 
@@ -353,6 +374,21 @@
       <td>Training data (workouts, sets, body weight, special category data)</td>
       <td>For the life of the account</td>
       <td>Account closure or deletion request</td>
+    </tr>
+    <tr>
+      <td>Apple Health data (workouts, steps, resting heart rate imported to your account)</td>
+      <td>For the life of the account</td>
+      <td>Account closure or deletion request</td>
+    </tr>
+    <tr>
+      <td>Push tokens (iPhone app)</td>
+      <td>Until Apple reports the token no longer valid, or the account closes</td>
+      <td>Automatic removal on an invalid-token report from Apple, or account closure</td>
+    </tr>
+    <tr>
+      <td>Notifications (in-app bell and push content)</td>
+      <td>Deleted at once when you dismiss one; deleted after 30 days if you do not</td>
+      <td>Dismissal, or rolling deletion at 30 days</td>
     </tr>
     <tr>
       <td>PT account after closure (transitional period for client data export)</td>
@@ -449,6 +485,7 @@
 
 <p><strong>If you are a personal trainer:</strong> we record when you open the Tenant app and which screens you open, and our internal reporting on that identifies you. It is not aggregate only. Section 4 sets this out in full, including your right to object.</p>
 <p>Our sub-processors (Vercel and Supabase) log technical request data (IP address, request path, timestamp) for security and service operation. This is strictly necessary and is covered by the legitimate interests basis in section 4.</p>
+<p>The iPhone app keeps your sign-in and preferences on your device. It does not track you across other companies' apps and websites.</p>
 
 <h2>14. Security</h2>
 <p>We take security seriously. Specifically:</p>
@@ -471,6 +508,7 @@
   <li><strong>Fastmail</strong> (Australia): corporate email.</li>
   <li><strong>Resend</strong> (United States): transactional email (invites, password resets, notifications), and engagement email sent on a PT instruction.</li>
   <li><strong>Stripe</strong> (United States): payment processing and subscription billing. Card data is held by Stripe; we do not store card numbers.</li>
+  <li><strong>Apple</strong> (United States): push notification delivery to the iPhone app.</li>
   <li><strong>Microsoft</strong> (United States, with EU and UK regions where available): internal staff messaging and calls via Teams. Client references are limited to first names; no surnames, emails, or other client details.</li>
 </ul>
 <p>If we add or change a sub-processor, we will update the DPA and notify PTs in the app.</p>
