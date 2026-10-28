@@ -168,7 +168,7 @@
 <h1>Privacy Notice</h1>
 
 <div class="meta">
-  <p><strong>Version:</strong> 2026-10-28-b</p>
+  <p><strong>Version:</strong> 2026-10-28-c</p>
   <p><strong>Effective from:</strong> 28 October 2026</p>
 </div>
 
@@ -247,7 +247,7 @@
 
 <h3>Apple Health data, iPhone app only (controller: 141kg for the records only you can see; your PT, or 141kg where you have no PT, for what joins your training history)</h3>
 <ul>
-  <li><strong>What:</strong> If you turn on Apple Health in the iPhone app and give iOS permission, the app reads these items from Apple Health on your phone: workouts (type, start and end time, duration, distance, active energy in kilocalories, average heart rate, elevation gain, and the name of the app or device that recorded the workout), body weight, daily step count, and resting heart rate. The app reads from Apple Health and never writes to it. It checks for new data when you open the app. On first use, or when you tap Import, it reads the last 30 days. It reads nothing else from Apple Health. We keep a copy of what the app reads in your account. The original stays in Apple Health under your control.</li>
+  <li><strong>What:</strong> If you turn on Apple Health in the iPhone app and give iOS permission, the app reads these items from Apple Health on your phone: workouts (type, start and end time, duration, distance, active energy in kilocalories, average heart rate, elevation gain, the name of the app or device that recorded the workout, and the effort score Apple Health holds for the workout, either the score you rated or Apple's automatic estimate), body weight, daily step count, and resting heart rate. The app reads from Apple Health and never writes to it. It checks for new data when you open the app. On first use, or when you tap Import, it reads the last 30 days. It reads nothing else from Apple Health. We keep a copy of what the app reads in your account. The original stays in Apple Health under your control.</li>
   <li><strong>Why:</strong> To add the walks, runs, rides and other cardio workouts you record on your Apple Watch or iPhone to your training history, to attach heart rate and calories to a matching strength session, and to show your steps and resting heart rate.</li>
   <li><strong>Lawful basis:</strong> Explicit consent under UK GDPR Article 9(2)(a). The app asks for a separate Apple Health consent before it imports anything. Heart rate and calorie values reach a session record only if you have also given the heart rate and session calories consents described in section 5. You can withdraw consent in the app settings or by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>. You can also stop the app reading Apple Health at any time under Settings, Health, Data Access in iOS. Withdrawing does not affect data already imported.</li>
   <li><strong>Who sees it:</strong> Your daily steps, your resting heart rate and the full Apple workout record are visible only to you. Your PT cannot see them. A cardio workout such as a walk becomes a set in your training history, and heart rate and calories can be copied onto a session. Your PT sees those as they see anything else you log, and your PT is the controller of them, as with the training data described above.</li>
@@ -298,9 +298,9 @@
 <ul>
   <li>Body weight measurements.</li>
   <li>Heart rate (per session, optional, entered by you or imported from Apple Health), and resting heart rate imported from Apple Health.</li>
-  <li>Rate of perceived exertion (RPE) on a 0 to 10 scale (per session, optional).</li>
+  <li>Rate of perceived exertion (RPE) on a 0 to 10 scale (per session, optional, entered by you or imported from the Apple Health effort score).</li>
   <li>Session calories (per session, optional, entered by you as an estimate or imported from Apple Health).</li>
-  <li>Daily step count and Apple Health workout details (type, duration, distance, active energy, elevation), imported from Apple Health if you turn that on in the iPhone app.</li>
+  <li>Daily step count and Apple Health workout details (type, duration, distance, active energy, elevation, effort score), imported from Apple Health if you turn that on in the iPhone app.</li>
 </ul>
 <p>For this category we rely on your <strong>explicit consent</strong> under Article 9(2)(a). This is a stricter standard than ordinary consent: it must be specific, informed, and given by a clear affirmative action.</p>
 <p>Because this is special category data, the app asks for your consent in two parts on the consent capture screen:</p>
@@ -309,7 +309,7 @@
   <li><strong>Acknowledgement:</strong> a separate tick-box confirming you understand this data is treated as special category health data under UK GDPR Article 9, and that you can withdraw consent at any time.</li>
 </ul>
 <p>Both tick-boxes must be ticked for consent to be valid. Without both, the platform will not record this data about you.</p>
-<p>The iPhone app asks for a separate Apple Health consent, with its own tick-boxes, before it imports anything from Apple Health. That consent covers the items listed in section 4. Heart rate and calorie values from Apple Health are copied onto a session only if you have also given the heart rate and session calories consents above.</p>
+<p>The iPhone app asks for a separate Apple Health consent, with its own tick-boxes, before it imports anything from Apple Health. That consent covers the items listed in section 4. Heart rate and calorie values from Apple Health are copied onto a session only if you have also given the heart rate and session calories consents above. The effort score is copied onto a session as its RPE only if you have also given the RPE consent above. The app fills an empty RPE only. It never replaces an RPE you typed. If the effort score changes in Apple Health within 7 days of the workout, the app updates an RPE it filled earlier.</p>
 <p>You can withdraw consent at any time in the app settings or by emailing <a href="mailto:admin@141kg.com">admin@141kg.com</a>. When you do, we stop the relevant processing immediately. Data already recorded remains in your history unless you also ask for it to be deleted (which is a separate right, covered in section 11).</p>
 <p><strong>About the Recovery feature.</strong> The Recovery indicator shown in the app is computed from your training data (volume per body area and time elapsed since you last trained that area). It is not a separate data point you or your PT enter, and we do not record sleep, soreness, mood, or stress ratings. Because Recovery is derived from training data, it does not require separate special category consent: its lawful basis is the same as the underlying training data it is computed from. If we ever add user-entered recovery or wellbeing fields (such as a sleep tracker or soreness slider), we will update this section and ask for fresh consent before recording that data.</p>
 
@@ -382,8 +382,8 @@
     </tr>
     <tr>
       <td>Push tokens (iPhone app)</td>
-      <td>Until Apple reports the token no longer valid, or the account closes</td>
-      <td>Automatic removal on an invalid-token report from Apple, or account closure</td>
+      <td>Until Apple reports the token no longer valid, 90 days after the app last used it, or the account closes</td>
+      <td>Automatic removal on an invalid-token report from Apple, automatic daily deletion of tokens unused for 90 days, or account closure</td>
     </tr>
     <tr>
       <td>Notifications (in-app bell and push content)</td>
